@@ -1,4 +1,22 @@
 (function () {
+  const REPORTED_DATA_DEFAULTS = [
+    "Paper ID",
+    "Sample / condition",
+    "Dopant (at.%)",
+    "Fabrication technique",
+    "Deposition temp (C)",
+    "Post-deposition temp (C)",
+    "Atmosphere",
+    "Thickness (nm)",
+    "Mobility (cm^2/Vs)",
+    "Resistivity (ohm·cm)",
+    "Carrier concentration (cm^-3)",
+    "Bandgap (eV)",
+    "Property name",
+    "Property value",
+    "Property unit",
+  ];
+
   function inferColumnOptions(field) {
     const key = String(field || "");
     const lower = key.toLowerCase();
@@ -39,6 +57,7 @@
   function renderGrid(container) {
     const csvPath = container.dataset.csv;
     const title = container.dataset.title || "Data";
+    const hasColumnPicker = container.dataset.columnPicker === "true";
 
     const csvUrl = new URL(csvPath, window.location.href).toString();
 
@@ -65,11 +84,19 @@
           return;
         }
 
-        const columns = fields.map(inferColumnOptions);
+        const defaultFields = new Set(
+          hasColumnPicker
+            ? REPORTED_DATA_DEFAULTS.filter((field) => fields.includes(field))
+            : fields
+        );
+        const columns = fields.map((field) => ({
+          ...inferColumnOptions(field),
+          visible: defaultFields.has(field),
+        }));
 
         // Better first impression for literature tables:
         // search, sort, resize, and compact enough to fit scientific columns.
-        new Tabulator(container, {
+        const table = new Tabulator(container, {
           data,
           columns,
           layout: "fitDataStretch",
@@ -83,11 +110,60 @@
           index: fields[0],
           height: "680px",
         });
+
+        if (hasColumnPicker) {
+          addColumnPicker(container, table, fields, defaultFields);
+        }
       })
       .catch((err) => {
         console.error(err);
         container.innerHTML = `<div class="grid-error">Failed to render ${title}. Check the browser console.</div>`;
       });
+  }
+
+  function addColumnPicker(container, table, fields, defaultFields) {
+    const controls = document.createElement("details");
+    controls.className = "column-picker";
+    controls.innerHTML = `
+      <summary>Choose reported-data columns</summary>
+      <p>Select the measurements you want to compare. Every visible column can be filtered and sorted from its header.</p>
+      <div class="column-picker-actions">
+        <button type="button" data-action="defaults">Recommended columns</button>
+        <button type="button" data-action="all">Show all columns</button>
+      </div>
+      <div class="column-picker-options"></div>
+    `;
+
+    const options = controls.querySelector(".column-picker-options");
+    fields.forEach((field) => {
+      const label = document.createElement("label");
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.value = field;
+      input.checked = defaultFields.has(field);
+      input.addEventListener("change", () => {
+        if (input.checked) table.showColumn(field);
+        else table.hideColumn(field);
+      });
+      label.append(input, document.createTextNode(field));
+      options.append(label);
+    });
+
+    function applySelection(selected) {
+      options.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+        input.checked = selected.has(input.value);
+        if (input.checked) table.showColumn(input.value);
+        else table.hideColumn(input.value);
+      });
+    }
+
+    controls.querySelector('[data-action="defaults"]').addEventListener("click", () => {
+      applySelection(defaultFields);
+    });
+    controls.querySelector('[data-action="all"]').addEventListener("click", () => {
+      applySelection(new Set(fields));
+    });
+    container.before(controls);
   }
 
   function init() {

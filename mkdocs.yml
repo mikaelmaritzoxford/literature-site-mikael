@@ -18,7 +18,5 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - How to use: how-to-use.md
   - Papers: papers.md
   - Reported Data: reported-data.md
-  - Notes: notes.md

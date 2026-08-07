@@ -12,7 +12,7 @@ from urllib.parse import urljoin, urlparse
 
 
 PROJECT = Path(__file__).resolve().parents[1]
-GRID_SLUGS = ("papers", "reported-data", "notes")
+GRID_SLUGS = ("papers", "reported-data")
 
 
 class SiteBuildTest(unittest.TestCase):
@@ -28,16 +28,21 @@ class SiteBuildTest(unittest.TestCase):
                 ),
             )
             subprocess.run(
-                [sys.executable, "build_site.py", "data/izro_literature.xlsx", "--build"],
+                [sys.executable, "build_site.py", "izro_literature.xlsx", "--build"],
                 cwd=sandbox,
                 check=True,
             )
+
+            self.assertFalse((sandbox / "site" / "how-to-use").exists())
+            self.assertFalse((sandbox / "site" / "notes").exists())
 
             for slug in GRID_SLUGS:
                 html_path = sandbox / "site" / slug / "index.html"
                 html = html_path.read_text(encoding="utf-8")
                 match = re.search(r'class="csv-grid"[^>]+data-csv="([^"]+)"', html)
                 self.assertIsNotNone(match, f"No CSV grid found on {slug}")
+                if slug == "reported-data":
+                    self.assertIn('data-column-picker="true"', html)
 
                 page_url = f"https://example.test/project/{slug}/"
                 csv_url = urljoin(page_url, match.group(1))

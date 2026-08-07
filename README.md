@@ -5,7 +5,7 @@ This scaffold keeps the literature site on MkDocs + Material, but replaces the w
 ## What the generator does
 
 - Reads the `Main` sheet and turns it into the homepage.
-- Exports `Papers`, `Reported Data`, and `Notes` to CSV in `docs/data/`.
+- Exports `Papers` and `Reported Data` to CSV in `docs/data/`.
 - Writes each sheet page as a Tabulator mount point instead of a Markdown table.
 - Keeps Plotly figure insertion for the `Main` sheet exactly as before.
 
@@ -15,7 +15,7 @@ This scaffold keeps the literature site on MkDocs + Material, but replaces the w
 2. Run (the repository's template workbook is shown here):
 
 ```bash
-python build_site.py data/izro_literature.xlsx --build
+python build_site.py izro_literature.xlsx --build
 ```
 
 3. Preview locally (omit `--build` above if using the live server):
@@ -33,15 +33,15 @@ If you want the site to be fully offline, download those assets and point `extra
 ## Deployment
 
 Pushing `main` runs `.github/workflows/static.yml`. It regenerates all Markdown,
-CSV, and Plotly outputs from `data/izro_literature.xlsx`, builds MkDocs, and
+CSV, and Plotly outputs from `izro_literature.xlsx`, builds MkDocs, and
 publishes the result to GitHub Pages. Enable **GitHub Actions** as the Pages
 source in the repository settings.
 
 ## Verification
 
 Run `python -m unittest discover -s tests -v`. The test copies the project into
-a temporary sandbox, regenerates and builds the site, then checks that Papers,
-Reported Data, and Notes each point to an existing, non-empty published CSV.
+a temporary sandbox, regenerates and builds the site, then checks that Papers
+and Reported Data each point to an existing, non-empty published CSV.
 
 ## Files to edit
 

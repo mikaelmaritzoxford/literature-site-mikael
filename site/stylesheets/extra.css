@@ -6,6 +6,42 @@
   margin: 1rem 0 2rem;
 }
 
+.column-picker {
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+}
+
+.column-picker summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.column-picker-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.column-picker button {
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}
+
+.column-picker-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.35rem 1rem;
+}
+
+.column-picker-options label {
+  display: flex;
+  gap: 0.45rem;
+  align-items: baseline;
+}
+
 .grid-loading,
 .grid-empty,
 .grid-error {

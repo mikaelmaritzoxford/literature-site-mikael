@@ -32,7 +32,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate and build site
-        run: python build_site.py data/izro_literature.xlsx --build
+        run: python build_site.py izro_literature.xlsx --build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

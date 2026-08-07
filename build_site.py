@@ -200,12 +200,22 @@ def write_sheet_csv(ws, csv_path: Path):
             writer.writerow(row)
 
 
-def write_grid_page(title: str, csv_relpath: str, out_path: Path, notes: str | None = None):
+def write_grid_page(
+    title: str,
+    csv_relpath: str,
+    out_path: Path,
+    notes: str | None = None,
+    column_picker: bool = False,
+):
     lines = [f"# {title}", ""]
     if notes:
         lines.append(notes)
         lines.append("")
-    lines.append(f'<div class="csv-grid" data-csv="{csv_relpath}" data-title="{title}"></div>')
+    picker_attr = ' data-column-picker="true"' if column_picker else ""
+    lines.append(
+        f'<div class="csv-grid" data-csv="{csv_relpath}" '
+        f'data-title="{title}"{picker_attr}></div>'
+    )
     lines.append("")
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -278,12 +288,11 @@ def main():
 
     # Export sheet data to CSV and create grid pages.
     grid_sheets = [
-        ("Papers", "papers"),
-        ("Reported Data", "reported-data"),
-        ("Notes", "notes"),
+        ("Papers", "papers", False),
+        ("Reported Data", "reported-data", True),
     ]
 
-    for sheet_name, slug in grid_sheets:
+    for sheet_name, slug, column_picker in grid_sheets:
         csv_path = docs_dir / "data" / f"{slug}.csv"
         write_sheet_csv(wb[sheet_name], csv_path)
         write_grid_page(
@@ -292,10 +301,8 @@ def main():
             f"../data/{slug}.csv",
             docs_dir / f"{slug}.md",
             notes="Interactive table. Use the search box, sort headers, resize columns, and scroll horizontally as needed.",
+            column_picker=column_picker,
         )
-
-    if "how_to_use" in wb.sheetnames:
-        write_text_page(wb["how_to_use"], "How to use", docs_dir / "how-to-use.md")
 
     if args.build:
         subprocess.run([sys.executable, "-m", "mkdocs", "build"], cwd=project_dir, check=True)
