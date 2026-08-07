@@ -22,6 +22,10 @@ The literature consistently evaluates IZrO using carrier mobility, carrier conce
 
 Carrier mobility reported in the literature spans approximately 20–100 cm² V⁻¹ s⁻¹ depending on deposition technique and optimisation. RF sputtered films generally exhibit the highest mobility after careful optimisation of zirconium concentration and thermal processing.
 
+<div class="plotly-figure">
+  <iframe src="assets/plots/dopant_mobility.html" title="IZrO mobility vs dopant concentration" style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>
+</div>
+
 ### Resistivity
 
 Reported resistivities typically range from approximately 3×10⁻⁴ to 5×10⁻⁴ Ω·cm in highly optimised films. These values approach those obtained with conventional ITO while maintaining excellent optical transparency.
@@ -121,4 +125,3 @@ Performance remains highly sensitive to processing conditions, oxygen stoichiome
 ### Future opportunities
 
 Future literature would benefit from systematically reporting electronic band alignment, optical constants, deposition parameters, and complete transport properties using consistent experimental protocols.
-
