@@ -2,8 +2,14 @@
   max-width: initial;
 }
 
-div.dt-container {
+div.dt-container,
+div.dataTables_wrapper {
   width: 100%;
+  overflow-x: auto;
+}
+
+table.dataTable {
+  width: 100% !important;
 }
 
 table.dataTable th,

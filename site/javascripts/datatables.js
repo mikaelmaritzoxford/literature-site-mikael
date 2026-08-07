@@ -15,13 +15,7 @@
         paging: false,
         searching: true,
         ordering: true,
-        info: false,
-        layout: {
-          topStart: "search",
-          topEnd: null,
-          bottomStart: null,
-          bottomEnd: null
-        }
+        info: false
       });
     });
   }
