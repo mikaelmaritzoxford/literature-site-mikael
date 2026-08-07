@@ -1,13 +1,17 @@
-\
 from __future__ import annotations
 
 import argparse
 import re
-import shutil
 import subprocess
 from pathlib import Path
 
 from openpyxl import load_workbook
+
+from generate_plotly_figures import generate_dopant_mobility_plot
+
+
+PLOT_HTML_REL = "assets/plots/dopant_mobility.html"
+PLOT_ANCHOR_HEADINGS = {"carrier mobility", "mobility", "mobility vs dopant concentration"}
 
 
 def slugify(name: str) -> str:
@@ -90,7 +94,16 @@ def parse_main(ws):
     return title, sections
 
 
-def write_index(title, sections, out_path: Path):
+def _figure_iframe(html_relpath: str) -> str:
+    return (
+        f'<div class="plotly-figure">\n'
+        f'  <iframe src="{html_relpath}" title="IZrO mobility vs dopant concentration" '
+        f'style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>\n'
+        f'</div>'
+    )
+
+
+def write_index(title, sections, out_path: Path, figure_relpath: str | None = None):
     lines = [f"# {title}", ""]
     for sec in sections:
         lines.append(f"## {sec['heading']}")
@@ -103,6 +116,10 @@ def write_index(title, sections, out_path: Path):
             lines.append("")
             for p in sub.get("paragraphs", []):
                 lines.append(md_escape(p))
+                lines.append("")
+
+            if figure_relpath and sub["heading"].strip().lower() in PLOT_ANCHOR_HEADINGS:
+                lines.append(_figure_iframe(figure_relpath))
                 lines.append("")
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -148,10 +165,13 @@ def main():
     docs_dir = project_dir / "docs"
     docs_dir.mkdir(exist_ok=True)
 
+    plot_out = docs_dir / PLOT_HTML_REL
+    generate_dopant_mobility_plot(args.workbook, plot_out)
+
     wb = load_workbook(args.workbook, data_only=True)
 
     main_title, main_sections = parse_main(wb["Main"])
-    write_index(main_title, main_sections, docs_dir / "index.md")
+    write_index(main_title, main_sections, docs_dir / "index.md", figure_relpath=PLOT_HTML_REL)
 
     for sheet_name, out_name in [
         ("Papers", "papers.md"),
