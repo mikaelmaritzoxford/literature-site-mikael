@@ -4,9 +4,7 @@
 
 ### Material motivation
 
-Zirconium-doped indium oxide (IZrO) is a transparent conducting oxide developed as an alternative to indium tin oxide.
-
-Zirconium acts as a non-reducing dopant that enables high carrier mobility while suppressing ionized impurity scattering.
+Zirconium-doped indium oxide (IZrO) is a transparent conducting oxide developed as an alternative to indium tin oxide. Zirconium acts as a non-reducing dopant that enables high carrier mobility while suppressing ionized impurity scattering.
 
 ### Typical applications
 
@@ -22,10 +20,6 @@ The literature consistently evaluates IZrO using carrier mobility, carrier conce
 
 Carrier mobility reported in the literature spans approximately 20–100 cm² V⁻¹ s⁻¹ depending on deposition technique and optimisation. RF sputtered films generally exhibit the highest mobility after careful optimisation of zirconium concentration and thermal processing.
 
-<div class="plotly-figure">
-  <iframe src="assets/plots/dopant_mobility.html" title="IZrO mobility vs dopant concentration" style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>
-</div>
-
 ### Resistivity
 
 Reported resistivities typically range from approximately 3×10⁻⁴ to 5×10⁻⁴ Ω·cm in highly optimised films. These values approach those obtained with conventional ITO while maintaining excellent optical transparency.
@@ -37,6 +31,12 @@ Reported sheet resistance commonly falls between 20 and 30 Ω/sq for films inten
 ### Carrier concentration
 
 Carrier concentrations generally lie near 10²⁰ cm⁻³. Unlike heavily doped ITO, performance improvements in IZrO are often associated with mobility enhancement rather than continuously increasing free carrier density.
+
+**Figure 1. Mobility vs dopant concentration**
+
+<div class="plotly-figure">
+  <iframe src="assets/plots/figure1.html" title="Figure 1" style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>
+</div>
 
 ## Optical Properties
 
@@ -83,6 +83,12 @@ Post-deposition annealing between approximately 300°C and 500°C is frequently 
 ### Process atmosphere
 
 Oxygen partial pressure during deposition and annealing strongly influences oxygen vacancy concentration. Careful control of oxygen availability is therefore essential for reproducible electrical performance.
+
+**Figure 2. Temperature vs fabrication method**
+
+<div class="plotly-figure">
+  <iframe src="assets/plots/figure2.html" title="Figure 2" style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>
+</div>
 
 ## Solar Cell Applications
 

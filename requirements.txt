@@ -3,6 +3,7 @@
 
 python>=3.11
 mkdocs
+mkdocs-material
 openpyxl
 pandas
 plotly

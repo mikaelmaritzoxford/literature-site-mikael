@@ -5,17 +5,23 @@ docs_dir: docs
 site_dir: site
 
 theme:
-  name: readthedocs
+  name: material
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
   - Papers: papers.md
   - Reported Data: reported-data.md
-  - Notes: notes.md
-  - How to Use: how-to-use.md
+
 
 markdown_extensions:
   - tables
   - admonition
   - toc:
       permalink: true
+      
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js

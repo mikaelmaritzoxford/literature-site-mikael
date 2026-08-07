@@ -1,4 +1,4 @@
-# how_to_use
+# How to use
 
 | Column 1 | How to use |
 | --- | --- |
