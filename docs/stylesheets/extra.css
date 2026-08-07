@@ -1,3 +1,12 @@
 .md-grid {
   max-width: initial;
 }
+
+div.dt-container {
+  width: 100%;
+}
+
+table.dataTable th,
+table.dataTable td {
+  white-space: nowrap;
+}
