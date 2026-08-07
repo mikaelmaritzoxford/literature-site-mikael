@@ -1,2 +1,6 @@
-setup.txt
-izro_literature_v3.xlsx
+old/
+site/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/

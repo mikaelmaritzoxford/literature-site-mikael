@@ -42,7 +42,7 @@
 
     const csvUrl = new URL(csvPath, window.location.href).toString();
 
-    container.innerHTML = `<div class="grid-loading">Loading ${title}…</div>`;
+    container.innerHTML = `<div class="grid-loading">Loading ${title}&hellip;</div>`;
 
     loadCsv(csvUrl)
       .then((csvText) => {

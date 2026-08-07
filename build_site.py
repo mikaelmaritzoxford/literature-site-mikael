@@ -5,6 +5,7 @@ import csv
 import importlib
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 from openpyxl import load_workbook
@@ -287,7 +288,8 @@ def main():
         write_sheet_csv(wb[sheet_name], csv_path)
         write_grid_page(
             sheet_name,
-            f"data/{slug}.csv",
+            # Pages publish at /<slug>/index.html; CSV files publish at /data/.
+            f"../data/{slug}.csv",
             docs_dir / f"{slug}.md",
             notes="Interactive table. Use the search box, sort headers, resize columns, and scroll horizontally as needed.",
         )
@@ -296,7 +298,7 @@ def main():
         write_text_page(wb["how_to_use"], "How to use", docs_dir / "how-to-use.md")
 
     if args.build:
-        subprocess.run(["mkdocs", "build"], cwd=project_dir, check=True)
+        subprocess.run([sys.executable, "-m", "mkdocs", "build"], cwd=project_dir, check=True)
 
 
 if __name__ == "__main__":
