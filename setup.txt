@@ -1,5 +1,9 @@
+navigate to location:
+cd C:\Users\ruybo\OneDrive - Nexus365\Documents-Research\2025_TCEs for tandem PV\IZRO\literature site
+
+
 conda create -n literature -c conda-forge --file requirements.txt
 conda activate literature
 
-python build_site.py /zr_indium_oxide_literature_v2.xlsx --build
+python build_site.py ../zr_indium_oxide_literature_v2.xlsx --build
 mkdocs serve
