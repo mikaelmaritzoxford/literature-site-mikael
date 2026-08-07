@@ -99,8 +99,9 @@
         const table = new Tabulator(container, {
           data,
           columns,
-          layout: "fitDataStretch",
-          responsiveLayout: "collapse",
+          // Keep measurements as top-level column headers. Horizontal
+          // scrolling is preferable to Tabulator's per-row collapsed tables.
+          layout: "fitData",
           movableColumns: true,
           resizableColumnFit: true,
           placeholder: `No rows in ${title}`,

@@ -58,6 +58,10 @@
   color: var(--md-default-fg-color);
 }
 
+.tabulator .tabulator-tableholder {
+  overflow-x: auto;
+}
+
 .tabulator .tabulator-header {
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
   background: var(--md-default-bg-color);

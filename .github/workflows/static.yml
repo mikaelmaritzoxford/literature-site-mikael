@@ -31,8 +31,8 @@ jobs:
       - name: Install MkDocs and dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate and build site
-        run: python build_site.py izro_literature.xlsx --build
+      - name: Build generated documentation
+        run: mkdocs build --strict
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
