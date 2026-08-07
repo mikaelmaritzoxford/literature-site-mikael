@@ -1,9 +1,5 @@
 # Notes
 
-| Paper ID | Tags | Knowledge extracted | Knldg2 | Knldg3 | Knldg4 | Knldg5 | Knldg6 | Knldg7 | Knldg8 | Knldg9 | Knldg10 | Knldg11 | Knldg12 | Knldg13 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Manoharan_2015 | spray pyrolysis; band gap; resistivity | Spray-pyrolyzed Zr-doped In2O3 retains cubic structure and shows a strong trade-off between doping and transparency/electrical transport; 7 at.% is the reported transport optimum in the abstract. |  |  |  |  |  |  |  |  |  |  |  |  |
-| Zhang_2019 | solution processing; oxygen vacancies; annealing | Solution-processed InxZryO can be tuned by Zr concentration and anneal; the reported minimum oxygen vacancy fraction occurs at 10 at.% Zr and 400 C. |  |  |  |  |  |  |  |  |  |  |  |  |
-| Morales-Masis_2018 | front electrode; mobility; SHJ | Zr-doped In2O3 is presented as a highly conductive transparent front electrode with very high mobility and competitive device efficiency in SHJ solar cells. |  |  |  |  |  |  |  |  |  |  |  |  |
-| Han_2023 | tandem; work function; transmittance | Room-temperature sputtered IZrO combines low resistivity, low sheet resistance, high transmittance, and a work function compatible with tandem device stacks. |  |  |  |  |  |  |  |  |  |  |  |  |
-| Micali_2024 | ultra-thin; EQE; annealing | Ultra-thin IZrO films at low Zr concentration can reach low resistivity and good transmittance; 90 nm films give EQE comparable to ITO. |  |  |  |  |  |  |  |  |  |  |  |  |
+Interactive table. Use the search box, sort headers, resize columns, and scroll horizontally as needed.
+
+<div class="csv-grid" data-csv="data/notes.csv" data-title="Notes"></div>

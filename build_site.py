@@ -1,7 +1,7 @@
-\
 from __future__ import annotations
 
 import argparse
+import csv
 import importlib
 import re
 import subprocess
@@ -28,18 +28,17 @@ def md_escape(s):
     return s.replace("|", r"\|")
 
 
-def markdown_table(headers, rows):
-    esc = lambda x: md_escape(x).replace("\n", "<br>")
-    out = []
-    out.append("| " + " | ".join(esc(h) for h in headers) + " |")
-    out.append("| " + " | ".join(["---"] * len(headers)) + " |")
-    for row in rows:
-        row = [esc(x) for x in row]
-        out.append("| " + " | ".join(row) + " |")
-    return "\n".join(out)
-
-
 def parse_main(ws):
+    """
+    Main sheet parser.
+
+    Rules:
+    - A1 = site title
+    - A row with text in A and empty B = level-1 section
+    - A row with text in A and text in B = level-2 subsection, B is first paragraph
+    - Rows with text only in B append to the active paragraph block
+    - Figure markers can appear in C and are attached to the active paragraph block
+    """
     title = ws["A1"].value or "Literature Website"
     sections = []
     current_section = None
@@ -100,7 +99,6 @@ def parse_main(ws):
                     current_block["figures"].extend(_parse_figures(c))
             continue
 
-        # If only C is populated, attach it to the active paragraph block, if any.
         if c:
             if current_block is not None:
                 current_block["figures"].extend(_parse_figures(c))
@@ -123,10 +121,10 @@ def _parse_figures(text: str):
 
 def _figure_block(relpath: str, caption: str, title: str) -> str:
     return (
-        f'**{caption}**\n\n'
+        f"**{caption}**\n\n"
         f'<div class="plotly-figure">\n'
         f'  <iframe src="{relpath}" title="{title}" style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>\n'
-        f'</div>'
+        f"</div>"
     )
 
 
@@ -161,13 +159,13 @@ def write_index(title, sections, out_path: Path, figure_relpaths: dict[int, str]
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_sheet_page(ws, title: str, out_path: Path):
-    rows = []
-    headers = []
+def _sheet_headers_and_rows(ws):
     max_col = ws.max_column
     max_row = ws.max_row
 
     header_row = None
+    headers = []
+    rows = []
     for r in range(1, max_row + 1):
         vals = [ws.cell(r, c).value for c in range(1, max_col + 1)]
         if any(nonempty(v) for v in vals):
@@ -176,19 +174,54 @@ def write_sheet_page(ws, title: str, out_path: Path):
             break
 
     if header_row is None:
-        out_path.write_text(f"# {title}\n\n_No data found._\n", encoding="utf-8")
-        return
+        return [], []
 
     for r in range(header_row + 1, max_row + 1):
         vals = [ws.cell(r, c).value for c in range(1, max_col + 1)]
         if not any(nonempty(v) for v in vals):
             continue
-        rows.append([cell_str(v) for v in vals[:len(headers)]])
+        row = [cell_str(v) for v in vals[:len(headers)]]
+        if len(row) < len(headers):
+            row.extend([""] * (len(headers) - len(row)))
+        rows.append(row)
 
-    md = [f"# {title}", ""]
-    md.append(markdown_table(headers, rows))
-    md.append("")
-    out_path.write_text("\n".join(md), encoding="utf-8")
+    return headers, rows
+
+
+def write_sheet_csv(ws, csv_path: Path):
+    headers, rows = _sheet_headers_and_rows(ws)
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    with csv_path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if headers:
+            writer.writerow(headers)
+        for row in rows:
+            writer.writerow(row)
+
+
+def write_grid_page(title: str, csv_relpath: str, out_path: Path, notes: str | None = None):
+    lines = [f"# {title}", ""]
+    if notes:
+        lines.append(notes)
+        lines.append("")
+    lines.append(f'<div class="csv-grid" data-csv="{csv_relpath}" data-title="{title}"></div>')
+    lines.append("")
+    out_path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def write_text_page(ws, title: str, out_path: Path):
+    headers, rows = _sheet_headers_and_rows(ws)
+    if not headers:
+        out_path.write_text(f"# {title}\n\n_No data found._\n", encoding="utf-8")
+        return
+
+    lines = [f"# {title}", ""]
+    lines.append("| " + " | ".join(md_escape(h) for h in headers) + " |")
+    lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
+    for row in rows:
+        lines.append("| " + " | ".join(md_escape(x).replace("\n", "<br>") for x in row) + " |")
+    lines.append("")
+    out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def collect_figures(ws):
@@ -224,7 +257,7 @@ def generate_figures(workbook_path: Path, docs_dir: Path, figures: set[int]) -> 
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate MkDocs pages from an Excel workbook and build the site.")
+    parser = argparse.ArgumentParser(description="Generate MkDocs pages and CSV grids from an Excel workbook.")
     parser.add_argument("workbook", type=Path, help="Path to the .xlsx workbook")
     parser.add_argument("--project-dir", type=Path, default=Path(__file__).resolve().parent, help="Project root")
     parser.add_argument("--build", action="store_true", help="Run mkdocs build after generating pages")
@@ -237,19 +270,30 @@ def main():
     wb = load_workbook(args.workbook, data_only=True)
     main_ws = wb["Main"]
 
+    # Generate figures first so the index can reference them.
     main_title, main_sections = parse_main(main_ws)
     figure_relpaths, figure_titles = generate_figures(args.workbook, docs_dir, collect_figures(main_ws))
     write_index(main_title, main_sections, docs_dir / "index.md", figure_relpaths, figure_titles)
 
-    for sheet_name, out_name in [
-        ("Papers", "papers.md"),
-        ("Reported Data", "reported-data.md"),
-        ("Notes", "notes.md"),
-    ]:
-        write_sheet_page(wb[sheet_name], sheet_name, docs_dir / out_name)
+    # Export sheet data to CSV and create grid pages.
+    grid_sheets = [
+        ("Papers", "papers"),
+        ("Reported Data", "reported-data"),
+        ("Notes", "notes"),
+    ]
+
+    for sheet_name, slug in grid_sheets:
+        csv_path = docs_dir / "data" / f"{slug}.csv"
+        write_sheet_csv(wb[sheet_name], csv_path)
+        write_grid_page(
+            sheet_name,
+            f"data/{slug}.csv",
+            docs_dir / f"{slug}.md",
+            notes="Interactive table. Use the search box, sort headers, resize columns, and scroll horizontally as needed.",
+        )
 
     if "how_to_use" in wb.sheetnames:
-        write_sheet_page(wb["how_to_use"], "How to use", docs_dir / "how-to-use.md")
+        write_text_page(wb["how_to_use"], "How to use", docs_dir / "how-to-use.md")
 
     if args.build:
         subprocess.run(["mkdocs", "build"], cwd=project_dir, check=True)

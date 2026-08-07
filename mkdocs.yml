@@ -1,31 +1,23 @@
-site_name: "Zirconium-Doped Indium Oxide (IZrO)"
-site_description: "Literature knowledge base for zirconium-doped indium oxide"
-site_author: "OpenAI scaffold"
-docs_dir: docs
-site_dir: site
-
+site_name: IZrO Literature
 theme:
   name: material
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/tabulator-tables/dist/css/tabulator.min.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js
+  - https://cdn.jsdelivr.net/npm/tabulator-tables/dist/js/tabulator.min.js
+  - javascripts/tabulator.js
 
 nav:
   - Home: index.md
   - Papers: papers.md
   - Reported Data: reported-data.md
-
-markdown_extensions:
-  - tables
-  - admonition
-  - toc:
-      permalink: true
-
-extra_css:
-  - https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.min.css
-  - https://cdn.datatables.net/fixedcolumns/5.0.4/css/fixedColumns.dataTables.min.css
-  - stylesheets/extra.css
-
-extra_javascript:
-  - https://code.jquery.com/jquery-3.7.1.min.js
-  - https://cdn.datatables.net/2.3.7/js/dataTables.min.js
-  - https://cdn.datatables.net/fixedcolumns/5.0.4/js/dataTables.fixedColumns.min.js
-  - javascripts/datatables.js
-
+  - Notes: notes.md

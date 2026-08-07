@@ -2,17 +2,52 @@
   max-width: initial;
 }
 
-div.dt-container,
-div.dataTables_wrapper {
+.csv-grid {
+  margin: 1rem 0 2rem;
+}
+
+.grid-loading,
+.grid-empty,
+.grid-error {
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  background: var(--md-default-bg-color);
+}
+
+.tabulator {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.tabulator .tabulator-header {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+}
+
+.tabulator .tabulator-col,
+.tabulator .tabulator-cell {
+  white-space: normal;
+}
+
+.tabulator .tabulator-col-title,
+.tabulator .tabulator-cell {
+  line-height: 1.4;
+}
+
+.tabulator .tabulator-cell {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.tabulator .tabulator-header-filter input {
   width: 100%;
-  overflow-x: auto;
+  box-sizing: border-box;
 }
 
-table.dataTable {
-  width: 100% !important;
-}
-
-table.dataTable th,
-table.dataTable td {
-  white-space: nowrap;
+.tabulator .tabulator-footer {
+  background: var(--md-default-bg-color);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
 }

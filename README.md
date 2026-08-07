@@ -1,27 +1,38 @@
-# IZrO literature MkDocs scaffold
+# Tabulator-backed MkDocs scaffold
 
-## Local setup
+This scaffold keeps the literature site on MkDocs + Material, but replaces the wide spreadsheet-like pages with CSV-backed Tabulator grids.
+
+## What the generator does
+
+- Reads the `Main` sheet and turns it into the homepage.
+- Exports `Papers`, `Reported Data`, and `Notes` to CSV in `docs/data/`.
+- Writes each sheet page as a Tabulator mount point instead of a Markdown table.
+- Keeps Plotly figure insertion for the `Main` sheet exactly as before.
+
+## Local workflow
+
+1. Put your workbook in the project root or pass the path explicitly.
+2. Run:
 
 ```bash
-conda env create -f environment.yml
-conda activate literature
-python build_site.py data/izro_literature_v3.xlsx
+python build_site.py path/to/workbook.xlsx
+```
+
+3. Preview locally:
+
+```bash
 mkdocs serve
 ```
 
-## Figure placement
+## Browser libraries
 
-Put `Figure N` in column C on the row where the figure should appear.
+The site loads Tabulator and Papa Parse from CDN URLs declared in `mkdocs.yml`.
 
-The build script scans the `Main` sheet, generates `figures/figureN.py` outputs as Plotly HTML, and inserts the matching iframe into the rendered `index.md` at that point in the page.
+If you want the site to be fully offline, download those assets and point `extra_css` / `extra_javascript` to local copies instead.
 
-## Adding a new figure
+## Files to edit
 
-1. Create `figures/figure3.py`
-2. Make it define `generate_figure(workbook_path, out_html)`
-3. Put `Figure 3` in column C where you want it inserted
-4. Run `python build_site.py ...`
-
-## GitHub Pages
-
-The included workflow publishes the generated `docs/` folder to GitHub Pages.
+- `build_site.py`
+- `mkdocs.yml`
+- `docs/javascripts/tabulator.js`
+- `docs/stylesheets/extra.css`
