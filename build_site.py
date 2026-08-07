@@ -1,30 +1,20 @@
+\
 from __future__ import annotations
 
 import argparse
+import importlib
 import re
 import subprocess
 from pathlib import Path
 
 from openpyxl import load_workbook
 
-from generate_plotly_figures import generate_dopant_mobility_plot
 
-
-PLOT_HTML_REL = "assets/plots/dopant_mobility.html"
-PLOT_ANCHOR_HEADINGS = {"carrier mobility", "mobility", "mobility vs dopant concentration"}
-
-
-def slugify(name: str) -> str:
-    name = name.strip().lower()
-    name = re.sub(r"[^a-z0-9]+", "-", name)
-    name = re.sub(r"-+", "-", name).strip("-")
-    return name or "page"
+FIGURE_RE = re.compile(r"figure\s*(\d+)", re.I)
 
 
 def cell_str(v):
-    if v is None:
-        return ""
-    return str(v).strip()
+    return "" if v is None else str(v).strip()
 
 
 def nonempty(v):
@@ -54,73 +44,120 @@ def parse_main(ws):
     sections = []
     current_section = None
     current_sub = None
-    max_row = ws.max_row
+    current_block = None
 
-    for r in range(2, max_row + 1):
+    def flush_block():
+        nonlocal current_block, current_sub
+        if current_block is not None and current_sub is not None:
+            current_sub.setdefault("blocks", []).append(current_block)
+        current_block = None
+
+    def flush_sub():
+        nonlocal current_sub, current_section
+        flush_block()
+        if current_sub is not None and current_section is not None:
+            current_section.setdefault("subsections", []).append(current_sub)
+        current_sub = None
+
+    def flush_section():
+        nonlocal current_section
+        flush_sub()
+        if current_section is not None:
+            sections.append(current_section)
+        current_section = None
+
+    for r in range(2, ws.max_row + 1):
         a = cell_str(ws[f"A{r}"].value)
         b = cell_str(ws[f"B{r}"].value)
+        c = cell_str(ws[f"C{r}"].value)
 
-        if not a and not b:
+        if not a and not b and not c:
             continue
 
         if a and not b:
-            if current_sub and current_section is not None:
-                current_section.setdefault("subsections", []).append(current_sub)
-                current_sub = None
-            if current_section is not None:
-                sections.append(current_section)
-            current_section = {"heading": a, "subsections": []}
+            flush_section()
+            current_section = {"heading": a, "intro": [], "subsections": []}
             continue
 
         if a and b:
-            if current_sub and current_section is not None:
-                current_section.setdefault("subsections", []).append(current_sub)
-            current_sub = {"heading": a, "paragraphs": [b]}
+            if current_section is None:
+                current_section = {"heading": "Untitled", "intro": [], "subsections": []}
+            flush_sub()
+            current_sub = {"heading": a, "blocks": []}
+            current_block = {"lines": [b], "figures": _parse_figures(c)}
             continue
 
-        if (not a) and b:
+        if not a and b:
             if current_sub is None:
                 if current_section is None:
-                    current_section = {"heading": "Untitled", "subsections": []}
-                current_section.setdefault("intro", []).append(b)
+                    current_section = {"heading": "Untitled", "intro": [], "subsections": []}
+                current_section.setdefault("intro", []).append({"lines": [b], "figures": _parse_figures(c)})
             else:
-                current_sub.setdefault("paragraphs", []).append(b)
+                if current_block is None:
+                    current_block = {"lines": [b], "figures": _parse_figures(c)}
+                else:
+                    current_block["lines"].append(b)
+                    current_block["figures"].extend(_parse_figures(c))
+            continue
 
-    if current_sub and current_section is not None:
-        current_section.setdefault("subsections", []).append(current_sub)
-    if current_section is not None:
-        sections.append(current_section)
+        # If only C is populated, attach it to the active paragraph block, if any.
+        if c:
+            if current_block is not None:
+                current_block["figures"].extend(_parse_figures(c))
 
+    flush_section()
     return title, sections
 
 
-def _figure_iframe(html_relpath: str) -> str:
+def _parse_figures(text: str):
+    if not text:
+        return []
+    parts = re.split(r"[,\n;]+", text)
+    out = []
+    for part in parts:
+        m = FIGURE_RE.search(part.strip())
+        if m:
+            out.append(int(m.group(1)))
+    return out
+
+
+def _figure_block(relpath: str, caption: str, title: str) -> str:
     return (
+        f'**{caption}**\n\n'
         f'<div class="plotly-figure">\n'
-        f'  <iframe src="{html_relpath}" title="IZrO mobility vs dopant concentration" '
-        f'style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>\n'
+        f'  <iframe src="{relpath}" title="{title}" style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>\n'
         f'</div>'
     )
 
 
-def write_index(title, sections, out_path: Path, figure_relpath: str | None = None):
+def write_index(title, sections, out_path: Path, figure_relpaths: dict[int, str], figure_titles: dict[int, str]):
     lines = [f"# {title}", ""]
     for sec in sections:
         lines.append(f"## {sec['heading']}")
         lines.append("")
-        for p in sec.get("intro", []):
-            lines.append(md_escape(p))
+        for block in sec.get("intro", []):
+            text = " ".join(block.get("lines", []))
+            lines.append(md_escape(text))
             lines.append("")
+            for fig_num in block.get("figures", []):
+                rel = figure_relpaths.get(fig_num)
+                if rel:
+                    caption = figure_titles.get(fig_num, f"Figure {fig_num}")
+                    lines.append(_figure_block(rel, caption, f"Figure {fig_num}"))
+                    lines.append("")
         for sub in sec.get("subsections", []):
             lines.append(f"### {sub['heading']}")
             lines.append("")
-            for p in sub.get("paragraphs", []):
-                lines.append(md_escape(p))
+            for block in sub.get("blocks", []):
+                text = " ".join(block.get("lines", []))
+                lines.append(md_escape(text))
                 lines.append("")
-
-            if figure_relpath and sub["heading"].strip().lower() in PLOT_ANCHOR_HEADINGS:
-                lines.append(_figure_iframe(figure_relpath))
-                lines.append("")
+                for fig_num in block.get("figures", []):
+                    rel = figure_relpaths.get(fig_num)
+                    if rel:
+                        caption = figure_titles.get(fig_num, f"Figure {fig_num}")
+                        lines.append(_figure_block(rel, caption, f"Figure {fig_num}"))
+                        lines.append("")
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -154,6 +191,38 @@ def write_sheet_page(ws, title: str, out_path: Path):
     out_path.write_text("\n".join(md), encoding="utf-8")
 
 
+def collect_figures(ws):
+    figs = set()
+    for r in range(1, ws.max_row + 1):
+        c = cell_str(ws[f"C{r}"].value)
+        figs.update(_parse_figures(c))
+    return figs
+
+
+def generate_figures(workbook_path: Path, docs_dir: Path, figures: set[int]) -> tuple[dict[int, str], dict[int, str]]:
+    relpaths = {}
+    titles = {}
+    plots_dir = docs_dir / "assets" / "plots"
+    plots_dir.mkdir(parents=True, exist_ok=True)
+
+    for n in sorted(figures):
+        module_name = f"figures.figure{n}"
+        try:
+            module = importlib.import_module(module_name)
+        except Exception as exc:
+            raise RuntimeError(f"Could not import {module_name}: {exc}") from exc
+
+        generator = getattr(module, "generate_figure", None)
+        if generator is None:
+            raise AttributeError(f"{module_name} must define generate_figure(workbook_path, out_html)")
+        out_html = plots_dir / f"figure{n}.html"
+        generator(workbook_path, out_html)
+        relpaths[n] = f"assets/plots/figure{n}.html"
+        titles[n] = getattr(module, "FIGURE_TITLE", f"Figure {n}")
+
+    return relpaths, titles
+
+
 def main():
     parser = argparse.ArgumentParser(description="Generate MkDocs pages from an Excel workbook and build the site.")
     parser.add_argument("workbook", type=Path, help="Path to the .xlsx workbook")
@@ -165,13 +234,12 @@ def main():
     docs_dir = project_dir / "docs"
     docs_dir.mkdir(exist_ok=True)
 
-    plot_out = docs_dir / PLOT_HTML_REL
-    generate_dopant_mobility_plot(args.workbook, plot_out)
-
     wb = load_workbook(args.workbook, data_only=True)
+    main_ws = wb["Main"]
 
-    main_title, main_sections = parse_main(wb["Main"])
-    write_index(main_title, main_sections, docs_dir / "index.md", figure_relpath=PLOT_HTML_REL)
+    main_title, main_sections = parse_main(main_ws)
+    figure_relpaths, figure_titles = generate_figures(args.workbook, docs_dir, collect_figures(main_ws))
+    write_index(main_title, main_sections, docs_dir / "index.md", figure_relpaths, figure_titles)
 
     for sheet_name, out_name in [
         ("Papers", "papers.md"),
@@ -181,7 +249,7 @@ def main():
         write_sheet_page(wb[sheet_name], sheet_name, docs_dir / out_name)
 
     if "how_to_use" in wb.sheetnames:
-        write_sheet_page(wb["how_to_use"], "how_to_use", docs_dir / "how-to-use.md")
+        write_sheet_page(wb["how_to_use"], "How to use", docs_dir / "how-to-use.md")
 
     if args.build:
         subprocess.run(["mkdocs", "build"], cwd=project_dir, check=True)

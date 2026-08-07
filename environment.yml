@@ -1,0 +1,9 @@
+name: literature
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - mkdocs
+  - openpyxl
+  - pandas
+  - plotly

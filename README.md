@@ -1,44 +1,27 @@
-# MkDocs scaffold for zirconium-doped indium oxide literature notes
-
-This scaffold turns the workbook into a static MkDocs website.
-
-## Files
-
-- `build_site.py` generates the Markdown pages from the workbook and can run `mkdocs build`
-- `mkdocs.yml` configures the website
-- `docs/` contains generated Markdown pages
-- `data/zr_indium_oxide_literature_v2.xlsx` is the source workbook
+# IZrO literature MkDocs scaffold
 
 ## Local setup
 
 ```bash
-conda create -n literature python=3.12 -y
+conda env create -f environment.yml
 conda activate literature
-pip install -r requirements.txt
-python build_site.py data/zr_indium_oxide_literature_v2.xlsx
+python build_site.py data/izro_literature_v3.xlsx
 mkdocs serve
 ```
 
-## Build HTML
+## Figure placement
 
-```bash
-python build_site.py data/zr_indium_oxide_literature_v2.xlsx --build
-```
+Put `Figure N` in column C on the row where the figure should appear.
 
-That creates the static site in the `site/` folder.
+The build script scans the `Main` sheet, generates `figures/figureN.py` outputs as Plotly HTML, and inserts the matching iframe into the rendered `index.md` at that point in the page.
 
-## Plotly figures
+## Adding a new figure
 
-To add Plotly figures later, generate them in Python and either:
+1. Create `figures/figure3.py`
+2. Make it define `generate_figure(workbook_path, out_html)`
+3. Put `Figure 3` in column C where you want it inserted
+4. Run `python build_site.py ...`
 
-1. embed the Plotly HTML directly into a Markdown page, or
-2. export static images with Plotly + Kaleido and place them under `docs/assets/`.
+## GitHub Pages
 
-## GitHub Pages test
-
-For a simple GitHub test:
-
-1. push this repository to GitHub
-2. run `python build_site.py data/zr_indium_oxide_literature_v2.xlsx --build` locally or in GitHub Actions
-3. publish the generated `site/` folder with GitHub Pages, or commit `site/` if you prefer a simple first test
-
+The included workflow publishes the generated `docs/` folder to GitHub Pages.
