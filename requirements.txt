@@ -1,0 +1,8 @@
+# create an environment with:
+# conda create -n literature -c conda-forge --file requirements.txt
+
+python>=3.11
+mkdocs
+openpyxl
+pandas
+plotly

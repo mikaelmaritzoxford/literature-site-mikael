@@ -1,0 +1,21 @@
+site_name: "Zirconium-Doped Indium Oxide (IZrO)"
+site_description: "Literature knowledge base for zirconium-doped indium oxide"
+site_author: "OpenAI scaffold"
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: readthedocs
+
+nav:
+  - Home: index.md
+  - Papers: papers.md
+  - Reported Data: reported-data.md
+  - Notes: notes.md
+  - How to Use: how-to-use.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
