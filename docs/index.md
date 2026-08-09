@@ -32,7 +32,7 @@ Reported sheet resistance commonly falls between 20 and 30 Ω/sq for films inten
 
 Carrier concentrations generally lie near 10²⁰ cm⁻³. Unlike heavily doped ITO, performance improvements in IZrO are often associated with mobility enhancement rather than continuously increasing free carrier density.
 
-**Figure 1. Mobility vs dopant concentration**
+**Figure 1. Mobility vs carrier concentration**
 
 <div class="plotly-figure">
   <iframe src="assets/plots/figure1.html" title="Figure 1" style="width: 100%; height: 720px; border: 0;" loading="lazy"></iframe>

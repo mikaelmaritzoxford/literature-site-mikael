@@ -142,6 +142,7 @@ published CSV files.
 
 ## Main files
 
+- `PROJECT_CONTEXT.md`: portable Codex onboarding and complete workflow context
 - `build_site.py`: workbook parser and site-content generator
 - `convert_pdfs.py`: minimal local AnyDoc PDF-to-Markdown converter
 - `.agents/skills/rename-literature-papers/`: Codex renaming workflow

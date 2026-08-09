@@ -9,7 +9,7 @@
     "Atmosphere",
     "Thickness (nm)",
     "Mobility (cm^2/Vs)",
-    "Resistivity (ohm·cm)",
+    "Resistivity (mohm·cm)",
     "Carrier concentration (cm^-3)",
     "Bandgap (eV)",
     "Property name",

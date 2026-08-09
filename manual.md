@@ -611,7 +611,7 @@ df = pd.read_excel(
 
 fig = px.scatter(
     df,
-    x="Dopant concentration",
+    x="Carrier concentration (cm^-3)",
     y="Mobility",
 )
 

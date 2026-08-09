@@ -13,7 +13,12 @@ else:
     from plotly_style import write_figure_html
 
 
-FIGURE_TITLE = "Figure 1. Mobility vs dopant concentration"
+FIGURE_TITLE = "Figure 1. Mobility vs carrier concentration"
+ELEMENTARY_CHARGE_C = 1.602176634e-19
+CARRIER_COLUMN = "Carrier concentration (cm^-3)"
+MOBILITY_COLUMN = "Mobility (cm^2/Vs)"
+RESISTIVITY_COLUMN = "Resistivity (mohm·cm)"
+LEGACY_RESISTIVITY_COLUMN = "Resistivity (ohm·cm)"
 
 
 def _num(series: pd.Series) -> pd.Series:
@@ -23,23 +28,36 @@ def _num(series: pd.Series) -> pd.Series:
 def generate_figure(workbook_path: Path, out_html: Path) -> Path:
     df = pd.read_excel(workbook_path, sheet_name="Reported Data")
 
-    required = ["Dopant (at.%)", "Mobility (cm^2/Vs)"]
+    required = [CARRIER_COLUMN, MOBILITY_COLUMN]
     for col in required:
         if col not in df.columns:
             raise KeyError(f"Missing required column: {col}")
 
     work = df.copy()
-    work["Dopant (at.%)"] = _num(work["Dopant (at.%)"])
-    work["Mobility (cm^2/Vs)"] = _num(work["Mobility (cm^2/Vs)"])
-    work["Resistivity (ohm·cm)"] = _num(work.get("Resistivity (ohm·cm)"))
-    work = work.dropna(subset=["Dopant (at.%)", "Mobility (cm^2/Vs)"])
+    work[CARRIER_COLUMN] = _num(work[CARRIER_COLUMN])
+    work[MOBILITY_COLUMN] = _num(work[MOBILITY_COLUMN])
+    if RESISTIVITY_COLUMN in work.columns:
+        work[RESISTIVITY_COLUMN] = _num(work[RESISTIVITY_COLUMN])
+    elif LEGACY_RESISTIVITY_COLUMN in work.columns:
+        work[RESISTIVITY_COLUMN] = _num(work[LEGACY_RESISTIVITY_COLUMN]) * 1000
+    else:
+        work[RESISTIVITY_COLUMN] = float("nan")
+
+    valid_transport = (work[CARRIER_COLUMN] > 0) & (work[MOBILITY_COLUMN] > 0)
+    calculated_resistivity = 1000 / (
+        ELEMENTARY_CHARGE_C * work[MOBILITY_COLUMN] * work[CARRIER_COLUMN]
+    )
+    work.loc[valid_transport, RESISTIVITY_COLUMN] = work.loc[
+        valid_transport, RESISTIVITY_COLUMN
+    ].fillna(calculated_resistivity[valid_transport])
+    work = work.dropna(subset=[CARRIER_COLUMN, MOBILITY_COLUMN])
 
     out_html.parent.mkdir(parents=True, exist_ok=True)
 
     if work.empty:
         fig = go.Figure()
         fig.add_annotation(
-            text="No rows currently contain both dopant concentration and mobility.",
+            text="No rows currently contain both carrier concentration and mobility.",
             xref="paper",
             yref="paper",
             x=0.5,
@@ -50,17 +68,17 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
         fig.update_layout(
             template="plotly_white",
             title=FIGURE_TITLE,
-            xaxis_title="Dopant concentration (at.%)",
+            xaxis_title="Carrier concentration (cm⁻³)",
             yaxis_title="Mobility (cm²/Vs)",
             height=600,
         )
         return write_figure_html(fig, out_html)
 
-    work = work.sort_values("Dopant (at.%)")
+    work = work.sort_values(CARRIER_COLUMN)
 
     # Color by resistivity (log scale) when available.
     color_vals = []
-    for v in work["Resistivity (ohm·cm)"].tolist():
+    for v in work[RESISTIVITY_COLUMN].tolist():
         if pd.notna(v) and v > 0:
             color_vals.append(math.log10(float(v)))
         else:
@@ -73,7 +91,7 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
                 "paper": row.get("Paper ID", ""),
                 "sample": row.get("Sample / condition", ""),
                 "technique": row.get("Fabrication technique", ""),
-                "resistivity": row.get("Resistivity (ohm·cm)", ""),
+                "resistivity": row.get(RESISTIVITY_COLUMN, ""),
                 "sheet": row.get("Sheet resistance (ohm/sq)", ""),
                 "confidence": row.get("Confidence", ""),
             }
@@ -81,8 +99,8 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
 
     fig = go.Figure()
     trace_kwargs = dict(
-        x=work["Dopant (at.%)"],
-        y=work["Mobility (cm^2/Vs)"],
+        x=work[CARRIER_COLUMN],
+        y=work[MOBILITY_COLUMN],
         mode="markers",
         marker=dict(
             size=12,
@@ -93,9 +111,9 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
             "Paper: %{customdata.paper}<br>"
             "Sample: %{customdata.sample}<br>"
             "Technique: %{customdata.technique}<br>"
-            "Dopant: %{x:.2f} at.%<br>"
+            "Carrier concentration: %{x:.3e} cm⁻³<br>"
             "Mobility: %{y:.2f} cm²/Vs<br>"
-            "Resistivity: %{customdata.resistivity}<br>"
+            "Resistivity: %{customdata.resistivity:.3g} mΩ·cm<br>"
             "Sheet resistance: %{customdata.sheet}<br>"
             "Confidence: %{customdata.confidence}<extra></extra>"
         ),
@@ -106,14 +124,14 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
         trace_kwargs["marker"]["color"] = color_vals
         trace_kwargs["marker"]["colorscale"] = "Viridis"
         trace_kwargs["marker"]["showscale"] = True
-        trace_kwargs["marker"]["colorbar"] = dict(title="log10 resistivity\n(Ω·cm)")
+        trace_kwargs["marker"]["colorbar"] = dict(title="log10 resistivity\n(mΩ·cm)")
     fig.add_trace(go.Scatter(**trace_kwargs))
 
     if len(work) > 1:
         fig.add_trace(
             go.Scatter(
-                x=work["Dopant (at.%)"],
-                y=work["Mobility (cm^2/Vs)"],
+                x=work[CARRIER_COLUMN],
+                y=work[MOBILITY_COLUMN],
                 mode="lines",
                 line=dict(width=1),
                 hoverinfo="skip",
@@ -124,7 +142,7 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
     fig.update_layout(
         template="plotly_white",
         title=FIGURE_TITLE,
-        xaxis_title="Dopant concentration (at.%)",
+        xaxis_title="Carrier concentration (cm⁻³)",
         yaxis_title="Mobility (cm²/Vs)",
         height=650,
         margin=dict(l=60, r=40, t=70, b=60),
