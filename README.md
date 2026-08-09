@@ -146,6 +146,7 @@ published CSV files.
 - `convert_pdfs.py`: minimal local AnyDoc PDF-to-Markdown converter
 - `.agents/skills/rename-literature-papers/`: Codex renaming workflow
 - `figures/`: Plotly figure generators referenced by `Main`
+- `figures/plotly_style.py`: shared 14-point, boxed-axis, Tableau-colour Plotly style and modebar configuration
 - `mkdocs.yml`: theme, navigation, and browser assets
 - `docs/javascripts/tabulator.js`: interactive table and column selector
 - `docs/stylesheets/extra.css`: site and table styling

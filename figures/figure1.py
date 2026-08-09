@@ -7,6 +7,11 @@ import math
 import pandas as pd
 import plotly.graph_objects as go
 
+if __package__:
+    from .plotly_style import write_figure_html
+else:
+    from plotly_style import write_figure_html
+
 
 FIGURE_TITLE = "Figure 1. Mobility vs dopant concentration"
 
@@ -49,8 +54,7 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
             yaxis_title="Mobility (cm²/Vs)",
             height=600,
         )
-        fig.write_html(str(out_html), include_plotlyjs="cdn", full_html=True)
-        return out_html
+        return write_figure_html(fig, out_html)
 
     work = work.sort_values("Dopant (at.%)")
 
@@ -126,8 +130,7 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
         margin=dict(l=60, r=40, t=70, b=60),
     )
 
-    fig.write_html(str(out_html), include_plotlyjs="cdn", full_html=True)
-    return out_html
+    return write_figure_html(fig, out_html)
 
 
 if __name__ == "__main__":

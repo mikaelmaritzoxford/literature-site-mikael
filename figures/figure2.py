@@ -6,6 +6,11 @@ from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
 
+if __package__:
+    from .plotly_style import write_figure_html
+else:
+    from plotly_style import write_figure_html
+
 
 FIGURE_TITLE = "Figure 2. Temperature vs fabrication method"
 
@@ -80,8 +85,7 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
             yaxis_title="Temperature (°C)",
             height=600,
         )
-        fig.write_html(str(out_html), include_plotlyjs="cdn", full_html=True)
-        return out_html
+        return write_figure_html(fig, out_html)
 
     points = pd.DataFrame.from_records(records)
     stage_order = ["Deposition", "Post-deposition"]
@@ -121,8 +125,7 @@ def generate_figure(workbook_path: Path, out_html: Path) -> Path:
         legend_title_text="Processing stage",
     )
 
-    fig.write_html(str(out_html), include_plotlyjs="cdn", full_html=True)
-    return out_html
+    return write_figure_html(fig, out_html)
 
 
 if __name__ == "__main__":

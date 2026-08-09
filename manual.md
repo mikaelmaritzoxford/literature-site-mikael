@@ -602,6 +602,7 @@ A simple figure script might begin:
 ``` python
 import pandas as pd
 import plotly.express as px
+from figures.plotly_style import write_figure_html
 
 df = pd.read_excel(
     "data/literature.xlsx",
@@ -614,7 +615,7 @@ fig = px.scatter(
     y="Mobility",
 )
 
-fig.write_html("docs/assets/plots/figure1.html")
+write_figure_html(fig, "docs/assets/plots/figure1.html")
 ```
 
 The exact column names depend on the workbook.
@@ -631,6 +632,16 @@ interactive legends, and exploration add scientific value.
 
 The site generator embeds each generated Plotly HTML file at the
 location specified by its `Figure N` marker in Column C of `Main`.
+
+Pass every Plotly figure to `figures.plotly_style.write_figure_html` rather
+than calling `fig.write_html` directly. The shared style enforces 14-point
+text, black boxed axes, outside ticks, and Matplotlib's Tableau 10 categorical
+colour sequence. Quantitative colour scales may still use an appropriate
+continuous palette such as Viridis.
+
+The shared HTML configuration also adds line, open-path, closed-path, circle,
+rectangle, and erase-shape controls to the Plotly modebar. These drawing tools
+are optional for the reader and do not alter the source data.
 
 Static figures remain appropriate when interactivity provides no useful
 benefit.
