@@ -1,5 +1,11 @@
+numpy
+scipy
 mkdocs
 mkdocs-material
 openpyxl
 pandas
 plotly
+pip
+pymupdf
+opencv-python
+pillow

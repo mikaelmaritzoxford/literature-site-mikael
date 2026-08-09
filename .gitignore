@@ -1,5 +1,7 @@
 old/
 site/
+.codex-artifacts/
+.vscode/
 __pycache__/
 *.py[cod]
 .pytest_cache/

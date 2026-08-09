@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Paper Info"
+  short_description: "Populate the literature workbook from one paper"
+  default_prompt: "Use $extract-paper-info to read one paper Markdown and update the literature workbook."

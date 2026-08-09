@@ -1,0 +1,4 @@
+interface:
+  display_name: "Digitize Figure Data"
+  short_description: "Extract calibrated tables from scientific figures"
+  default_prompt: "Use $digitize-figure-data to digitize a scientific figure into a calibrated CSV table."

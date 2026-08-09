@@ -35,6 +35,59 @@ GitHub Pages.
 7. Regenerate the website, inspect Home, Papers, and Reported Data locally,
    then commit the updated generated files under `docs/`.
 
+## PDF intake and naming
+
+PDF intake has two independent stages. Python converts the PDFs locally with
+AnyDoc; Codex reads the resulting Markdown and performs the bibliographic
+renaming through a repository-scoped skill. No OpenAI API key is required.
+
+```powershell
+python -m pip install -r requirements-conversion.txt
+python convert_pdfs.py
+```
+
+Converted files are written to `../literature pdfs/markdown/`. Then, inside
+Codex, invoke:
+
+```text
+$rename-literature-papers rename every matching literature PDF and Markdown pair now.
+```
+
+The skill immediately renames each paired PDF and Markdown file, then validates
+the results and writes a rename log. Scanned or image-only PDFs require a
+separate OCR path. See `manual.md`, section 4A, for details.
+
+## Figure extraction
+
+Install the local figure-processing stack through conda-forge:
+
+```powershell
+conda install -c conda-forge pymupdf opencv pillow numpy
+```
+
+Alternatively, install the pip packages:
+
+```powershell
+python -m pip install -r requirements-figures.txt
+```
+
+From an Anaconda Prompt, extract one paper by giving the PDF folder and enough
+of the beginning of its filename to identify it uniquely:
+
+```powershell
+python extract_figures.py --folder "..\literature pdfs" --pdf 2018_Morales
+```
+
+Complete figures, captions, and any confidently separated panels are written
+under the selected folder at `figures/YEAR_FirstAuthor/Figure_XX/`. To process
+every top-level PDF explicitly, run:
+
+```powershell
+python extract_figures.py --folder "..\literature pdfs" --all
+```
+
+No manifest is produced; researchers must inspect the images directly.
+
 ## Generate and preview locally
 
 From PowerShell:
@@ -90,6 +143,8 @@ published CSV files.
 ## Main files
 
 - `build_site.py`: workbook parser and site-content generator
+- `convert_pdfs.py`: minimal local AnyDoc PDF-to-Markdown converter
+- `.agents/skills/rename-literature-papers/`: Codex renaming workflow
 - `figures/`: Plotly figure generators referenced by `Main`
 - `mkdocs.yml`: theme, navigation, and browser assets
 - `docs/javascripts/tabulator.js`: interactive table and column selector

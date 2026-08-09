@@ -7,3 +7,7 @@ dependencies:
   - openpyxl
   - pandas
   - plotly
+  - pymupdf
+  - opencv
+  - pillow
+  - numpy

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rename Literature Papers"
+  short_description: "Automatically rename PDFs from extracted Markdown"
+  default_prompt: "Use $rename-literature-papers to rename every matching literature PDF and Markdown pair now."
