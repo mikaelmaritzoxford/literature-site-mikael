@@ -3,13 +3,11 @@
 ## Purpose
 
 This guide defines a practical workflow for conducting, documenting,
-analysing, and publishing a doctoral-level literature survey. The aim is
-not simply to collect papers, but to build a structured, auditable body
-of knowledge that can be updated throughout the doctorate and shared
-with the research group.
+analysing, and publishing a doctoral-level literature survey via a website. The aim is to build a structured, auditable body
+of knowledge that can be updated throughout the doctorate and shared with all members in the research group.
 
-The workflow uses **Zotero or another reference manager** for papers,
-**Excel** as the research workspace, **Python** for reproducible figures
+The workflow uses **pdfs** stored in your computer as the source  for scientific papers,
+**Excel** as the research database, **Python** for figures
 and site generation, **MkDocs** for the website, **Plotly** for
 interactive figures, **CSV + Tabulator** for large data tables, and
 **GitHub Pages** for publication.
@@ -21,10 +19,9 @@ interactive figures, **CSV + Tabulator** for large data tables, and
 ------------------------------------------------------------------------
 
 # 1. Define the Research Question
-
-Do not begin by downloading hundreds of papers. Write the initial
+Write the initial
 scientific question in one or two sentences and identify the
-subquestions that determine what information needs to be extracted.
+subquestions that determine what information needs to be obtained and extracted from reading papers.
 
 For a materials-science topic, these may include fabrication methods,
 compositions, processing conditions, electrical properties, optical
@@ -41,28 +38,23 @@ Begin with broad combinations of material names, abbreviations,
 alternative chemical names, properties, fabrication methods,
 applications, review articles, highly cited papers, and recent papers.
 
-The first objective is to understand the vocabulary and structure of the
-field. Do not attempt exhaustive extraction during this stage.
+The first objective is to understand the vocabulary and structure of the field. Do not attempt exhaustive extraction during this stage.
 
-Once important papers appear, follow their references, papers that cite
-them, important authors, competing research groups, and alternative
-terminology.
+Once important papers appear, follow their references, papers that cite them, important authors, competing research groups, and alternative terminology.
 
 ------------------------------------------------------------------------
 
 # 3. Build the Paper Library
 
-Store papers in a reference manager such as Zotero.
+Store papers in a a pdf format, downloaded to a folder on your computer, and on the most important ones, you can start adding them to a reference manager (it coudl be Zotero, Mendeley, Endnote).
 
-For every important paper, preserve the DOI, complete title, authors,
-journal, year, PDF where legally available, URL, and useful tags.
+For every important paper, the target will be to extract important information, including reported observation and useful tags.
 
 Use consistent tags such as `core-paper`, `review`, `processing`,
 `electrical`, `optical`, `electronic-structure`, `device`, and
 `methodology`.
 
-The reference manager is the **paper library**. It is not the structured
-scientific database.
+The folder with all the pdfs is the **paper library**. It is not the structured scientific database.
 
 ------------------------------------------------------------------------
 
@@ -85,6 +77,9 @@ High-value papers should receive substantially more attention than
 peripheral papers.
 
 ------------------------------------------------------------------------
+# Here we begin our workflow to extract info
+
+The first task we want to do is to extrac the text and image information from each of the pdfs you've selected as important papers to log observables from.
 
 # 4A. Run the PDF Intake Sub-Workflow
 
