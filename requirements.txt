@@ -9,3 +9,4 @@ pip
 pymupdf
 opencv-python
 pillow
+scipy
