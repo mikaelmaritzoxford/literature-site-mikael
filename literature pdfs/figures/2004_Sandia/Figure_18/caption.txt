@@ -1,0 +1,1 @@
+Figure 18. Example of module-string Voc measurements translated to the Standard Reporting Condition for comparison to expected nameplate value. Module-strings had twelve 150-Wp c-Si modules in series. The translation to a 50ºC temperature is also shown for comparison.

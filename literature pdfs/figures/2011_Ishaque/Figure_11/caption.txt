@@ -1,0 +1,1 @@
+Fig. 11. A mask implementation of PV simulator for group A.

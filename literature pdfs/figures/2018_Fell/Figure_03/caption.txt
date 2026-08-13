@@ -1,0 +1,1 @@
+Fig. 3. SunSolve ﬁtted to measured reﬂection R, the resulting simulated front ﬁlm absorption Afront, the derived Text, and EQE comparison between measure- ment and Quokka3 simulation.

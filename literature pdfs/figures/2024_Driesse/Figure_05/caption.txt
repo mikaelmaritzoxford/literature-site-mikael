@@ -1,0 +1,1 @@
+Fig. 5. Comparison of the original Erbs decomposition model and the proposed C1 continuous Erbs–Driesse model. The insets show the two small discontinuities of the original Erbs model that can potentially disrupt numerical optimization algorithms.

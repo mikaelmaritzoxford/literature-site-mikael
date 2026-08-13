@@ -1,0 +1,1 @@
+Fig. 11. Measured versus modelled Vmp/Voc (top) and Imp/Isc (bottom) ratios. The left column displays the CEC model, the middle column shows the DeSoto model and the right column is showing the PVsyst model. Color bars show dependence on effective irradiance and cell temperature. Data shown are for module A2.

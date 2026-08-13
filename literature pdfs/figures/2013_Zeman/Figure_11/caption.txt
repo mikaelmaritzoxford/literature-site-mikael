@@ -1,0 +1,1 @@
+Fig. 11. Photocurrent densities were obtained by integrating the total reﬂectance and absorption in the individual layers over the wavelength range of 350–1000 nm. The percentage values express the change in photocurrent density for the solar cell on 2-D gratings with respect to the ﬂat solar cell.

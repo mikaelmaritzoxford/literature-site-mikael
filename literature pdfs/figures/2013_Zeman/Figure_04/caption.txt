@@ -1,0 +1,1 @@
+Fig. 4. Simulated and measured EQE and J–V characteristic of a thin-ﬁlm a-Si:H solar cell deposited on (a,c) ﬂat ZnO:Al and (b,d) etched crater-like ZnO:Al with 35 nm rms roughness.

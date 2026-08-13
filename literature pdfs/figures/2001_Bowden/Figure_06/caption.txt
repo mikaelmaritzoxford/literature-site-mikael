@@ -1,0 +1,1 @@
+Figure 6: As top contact testing probes are removed the cell Rs increases. The SunsVoc measurement gives the cell IV curve without the effects of Rs.

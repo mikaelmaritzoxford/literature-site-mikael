@@ -1,0 +1,1 @@
+Fig. 4. Redistribution matrix for a Lambertian scatterer calculated analytically. (a) schematically shows the interaction of light at a Lambertian surface. (b) shows the complete redistribution matrix with all polar and azimuth angles. (c) shows the simplified version where all entries of different φ-values have been summed up for each given angle θ.

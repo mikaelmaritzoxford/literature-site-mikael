@@ -1,0 +1,1 @@
+Fig. 10. DTRMSE of the simulated and measured PV module temperatures as a function of roof absorptivity coeﬃcient for the summer period. The minimum DTRMSE value is marked with a red marker. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)

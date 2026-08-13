@@ -1,0 +1,1 @@
+Fig. 15. Photovoltaic array model circuit with a controlled current source, equivalent resistors and the equation of

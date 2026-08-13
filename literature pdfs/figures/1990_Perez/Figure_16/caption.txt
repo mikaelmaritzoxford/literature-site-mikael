@@ -1,0 +1,1 @@
+Fig. 16. Relative difference between measured and modeled luminance at four points in the sky. dome (Model h cqn ( I l ) + measured zenith luminance input; Model 2: eqn ( I l ) + horizontal diffuse irradiancc input; Model 3: Isotropic Sky; Model 4: Anisotropic sky equivalent luminance). Data from five

@@ -1,0 +1,1 @@
+Fig. 8. DTRMSE of the simulated and measured PV module temperatures as a function of kd limit for clear sky and overcast conditions for the winter and summer test periods. The minimum DTRMSE values are marked with red markers. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)

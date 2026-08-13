@@ -1,0 +1,1 @@
+Fig. 4. Dependence of the RMS error for ten transposition models on season and sky clarity for 2-axis tracking plane. Inputs to the models are reference measured direct and diﬀuse irradiances using optimal experi- mental techniques.

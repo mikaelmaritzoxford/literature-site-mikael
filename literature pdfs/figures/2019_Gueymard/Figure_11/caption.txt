@@ -1,0 +1,1 @@
+Fig. 11. Experimental realization of the AM1.5D standard reference spectrum at SRRL-NREL on 2017-10-04. Top panel: Comparison between AM1.5D and the instantaneous measurement from two collocated spectroradiometers. Bottom panel: percent difference between the SMARTS v2.9.8 predictions and the two observed spectra.

@@ -1,0 +1,1 @@
+Fig. 5. Equivalent circuit model used for parameterizing the compact model of the solar cells under study.

@@ -1,0 +1,1 @@
+Fig. 7. DTRMSE of the simulated and measured PV module temperatures as a function of heat capacity of the PV module for the winter and summer test periods. The minimum values of DTRMSE are marked with red markers. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)

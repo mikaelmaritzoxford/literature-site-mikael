@@ -1,0 +1,1 @@
+Fig. 7. Incidence angle variation for encapsulated silicon solar cells with and without diffractive grating at the rear side and random pyramids at the front side. For incidence angles up to 60°, the grating induced absorptance gain is almost not affected.

@@ -1,0 +1,1 @@
+Fig. 1. Schematic ﬂow of the modular EY modelling. The irradiance module computes the spectral irradiance I, the optics module the absorptance A, and the energy yield module calculates the short-circuit current density JSC and EY with the help of the electrics module.

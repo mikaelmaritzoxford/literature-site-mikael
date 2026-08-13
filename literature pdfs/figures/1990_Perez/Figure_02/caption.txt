@@ -1,0 +1,1 @@
+Fig. 2. Interrelationship between model inputs and outputs. The models' input data may be readily supplied by the Rotating Shadowband Radiometer, a new instrument well suited for precise network operation [9].

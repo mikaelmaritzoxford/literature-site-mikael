@@ -1,0 +1,1 @@
+Fig. 10. Comparison between the I–V characteristics obtained by the experimental data and the module model when considering only three pairs.

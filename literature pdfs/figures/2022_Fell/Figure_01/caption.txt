@@ -1,0 +1,1 @@
+Fig. 1. Extension of the lumped skin EQC boundary condition to include a top cell JV-curve via a two-diode model; exemplary 3D PERC cell solution domain where the shown EQC boundary conditions are applied to each lateral mesh element, connected laterally via the sheet resistances.

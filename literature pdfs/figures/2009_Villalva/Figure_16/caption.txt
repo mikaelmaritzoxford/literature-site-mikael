@@ -1,0 +1,1 @@
+Fig. 16. Photovoltaic array model circuit with a controlled current source and a computational block that solves the

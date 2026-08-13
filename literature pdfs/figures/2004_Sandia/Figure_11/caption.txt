@@ -1,0 +1,1 @@
+Figure 11. Regression analysis used to determine performance coefficients for array open-circuit voltage. The measured Voc values were translated to a common temperature, 50°C, before the regression analysis. The reference Voc value at the ASTM Standard Reporting Condition is also shown. Ns = 864 for this array.

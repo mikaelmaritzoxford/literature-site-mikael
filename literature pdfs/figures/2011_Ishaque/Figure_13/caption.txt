@@ -1,0 +1,1 @@
+Fig. 13. (a) I–V curves, (b) P–V curves for SM55 from PV simulator for parameters in Fig. 11.

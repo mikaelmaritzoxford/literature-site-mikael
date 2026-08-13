@@ -1,0 +1,1 @@
+Figure 16. Scatter chart of calculated hourly-average performance values for 3.36-kW array in Albuquerque, NM, over a one-year period. The ‘window’ superimposed shows the voltage and power constraints for the inverter used with the system. The fraction of the cumulative annual energy available from the array is also shown as a function of the array power level.

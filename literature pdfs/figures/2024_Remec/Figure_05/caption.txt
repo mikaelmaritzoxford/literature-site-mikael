@@ -1,0 +1,1 @@
+Figure 5. Daily energy generation losses of the tandem device attributed to the LSE eﬀect over the course of three consecutive weeks. Also plotted are the daily irradiation (orange curve) and the daily average of device temperature (black curve).

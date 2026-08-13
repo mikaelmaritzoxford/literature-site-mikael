@@ -1,0 +1,1 @@
+Fig. 1. FEA transient simulations for irradiance step changes.

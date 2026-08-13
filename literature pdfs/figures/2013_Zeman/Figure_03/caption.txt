@@ -1,0 +1,1 @@
+Fig. 3. Simulated and measured (a) AID at λ¼600 nm and (b) haze in transmission for two different TCO–air interfaces. The numbers in brackets denote the rms roughness.

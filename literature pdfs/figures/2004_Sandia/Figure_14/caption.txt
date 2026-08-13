@@ -1,0 +1,1 @@
+Figure 14. Modeled maximum power from array at three operating temperatures as a function of effective irradiance. Field measurements translated to 50ºC are shown for comparison with model. The reference Pmp value at the ASTM Standard Reporting Condition is also shown.

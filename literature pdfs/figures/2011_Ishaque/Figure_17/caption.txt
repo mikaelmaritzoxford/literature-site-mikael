@@ -1,0 +1,1 @@
+Fig. 17. (a and b) Output voltage and current from the PV array, (c) PV array power (solid line) and dc–dc converter power (dash line).

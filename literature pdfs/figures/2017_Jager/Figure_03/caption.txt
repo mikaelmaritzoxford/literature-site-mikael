@@ -1,0 +1,1 @@
+Fig. 3. Absorption proﬁles of optimized devices for (a) the regular architecture, and (b) the inverted architecture. Mainly because of the high parasitic absorption in Spiro-OMeTAD, with the inverse architecture almost 2.8 mA/cm2 can be gained with respect to the regular architecture.

@@ -1,0 +1,1 @@
+Figure 9. Method used to obtain an accurate field measurement of the reference short-circuit current, Isco, for the array. Data recorded during the time of day when the combined effect of solar spectrum and angle-of-incidence is smallest should be used for determining Isco.

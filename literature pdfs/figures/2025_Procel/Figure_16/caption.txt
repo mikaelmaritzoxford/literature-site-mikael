@@ -1,0 +1,1 @@
+Fig. 16. Horizon profiles used in the PV system simulations. The curves represent altitude angles as a function of azimuth, corresponding to two scenarios: (left) an unobstructed (free horizon) and (right) an urban skyline profile.

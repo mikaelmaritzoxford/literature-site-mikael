@@ -1,0 +1,1 @@
+Fig. 3. The optimization process for adjusting the perovskite thickness to achieve maximum matched absorbed current densities from the top perovskite and bottom silicon sub-cells. The results are given based on three different perovskite-Si tandem devices with the changed thickness of the perovskite films (d) indicated on the inset of the figure.

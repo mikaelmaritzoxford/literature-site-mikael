@@ -1,0 +1,1 @@
+Fig. 3. Comparison of 𝐶𝑎𝑚𝑏 vs temperature determined in this work to previous experimental data (symbols) and theoretical or empirical models determined under different injection conditions and assumptions. Note that for comparison purposes the empirical model of Altermatt et al. has been scaled to match our measurements at 300 K.

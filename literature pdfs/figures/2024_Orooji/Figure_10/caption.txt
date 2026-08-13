@@ -1,0 +1,1 @@
+Figure 10. Permissible levels of degradation in VOC, JSC, and FF and corresponding variation in the contributing diode parameters, i.e., CE, J0, RS, and RSh, respectively, for 0.5% annual degradation in tandem solar cell EY over 30 years in different climatic conditions.

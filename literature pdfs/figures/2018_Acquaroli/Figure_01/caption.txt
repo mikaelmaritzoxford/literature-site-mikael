@@ -1,0 +1,1 @@
+Fig. 1: Scheme of a multilayer stack comprising j = 1, .., M layers —media—, where dj is the geometrical thickness of each layer, θj is the angle of incidence in the medium normal to the surface, N0 is the index of refraction of the incident medium, Nj is the index of refraction of each layer, and NM+1 is the index of refraction of the substrate.⃗F ±

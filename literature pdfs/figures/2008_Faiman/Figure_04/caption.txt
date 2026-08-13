@@ -1,0 +1,1 @@
+Figure 4. Plot of H/(Tmod  Tamb) versus wind speed v, and associated least squares linear ﬁt to the data, for all 5-min data

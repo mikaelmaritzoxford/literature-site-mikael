@@ -1,0 +1,1 @@
+Fig. 7. Output power (solid symbols) and spectral correction (open symbols) for three days of the year at Cordoba, Argentina. Data labeled DC and AC show the power in and out of the inverter.

@@ -1,0 +1,1 @@
+Figure 13. Array voltages given by performance model after determination of required modeling coefficients. For comparison, the measured values were translated to a common temperature, 50°C, and also included on the chart. The modeled performance values at the ASTM Standard Reporting Condition are also shown.

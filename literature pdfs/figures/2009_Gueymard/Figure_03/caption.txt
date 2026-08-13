@@ -1,0 +1,1 @@
+Fig. 3. Apparent Mean Bias and RMS errors for ten transposition models for south vertical tilt at SRRL. Inputs to the models are either reference measured direct and diﬀuse irradiances using optimal experimental techniques, or measured global irradiance with ﬁxed albedo value and direct/diﬀuse separation using the Erbs correlation.

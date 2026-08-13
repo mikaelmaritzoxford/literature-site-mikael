@@ -1,0 +1,1 @@
+Fig. 3. Normalized RMSE for each model as a function of cell temperature and irradiance.

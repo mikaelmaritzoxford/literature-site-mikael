@@ -1,0 +1,1 @@
+Fig. 19. Percentage difference in annual energy yield (ΔEY) calculated using two spectral approaches: (i) the standard AM1.5 spectrum scaled to different irradiance levels (reference), and (ii) a spectral clustering method incorporating both spectral distribution and incident power. Results are shown for Delft and Catania under both free and urban horizon conditions.

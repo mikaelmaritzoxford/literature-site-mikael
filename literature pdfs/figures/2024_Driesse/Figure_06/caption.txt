@@ -1,0 +1,1 @@
+Fig. 6. Example of global horizontal irradiance and predicted in-plane diffuse irradi- ance during a clear sky day. In the bottom subplot, the black line corresponds to the diffuse irradiance predicted using the original Perez 1990 model, and the green line corresponds to the predicted sky irradiance using the continuous Perez–Driesse model proposed in this study.

@@ -1,0 +1,1 @@
+Fig. 1. Schematics of equivalent circuits for solar cells without current sources, (a) conventional single-diode model, (b) modiﬁed 2-diode model, and (c) modiﬁed 3-diode model.

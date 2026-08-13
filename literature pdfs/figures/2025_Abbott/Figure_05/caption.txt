@@ -1,0 +1,1 @@
+Fig. 5. Bifacial gain of PERC and tandem modules at every time step vs (a) day of year and (b) diffuse fraction, as calculated for Beijing.

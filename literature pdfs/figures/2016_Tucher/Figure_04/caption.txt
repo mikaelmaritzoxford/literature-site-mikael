@@ -1,0 +1,1 @@
+Fig. 4. Column sums of redistribution matrices (corresponding to internal reflectance) for interfaces with random pyramid texture. The polar angles with low reflectance exhibit a considerable angular shift when the surface is encapsulated in a higher refractive index material as EVA.

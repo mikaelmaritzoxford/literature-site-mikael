@@ -1,0 +1,1 @@
+Fig. 5. Absorption per layer, and direct and escape reﬂection, calculated using the matrix formalism with redistribution matrices computed with integrated ray-tracing and TMM. Non-absorbing layers (κ = 0) are not included.

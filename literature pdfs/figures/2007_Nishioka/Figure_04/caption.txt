@@ -1,0 +1,1 @@
+Fig. 4. Correlation between the Voc calculated from J01 obtained by modiﬁed 3-diode model and the measured Voc.

@@ -1,0 +1,1 @@
+Fig. 3. Deviation from the exact solution as a function of the number of coherent simulations averaged. The existing method of averaging with random ϕ (red line) and our new method of averaging with equidistant ϕ (green line) are compared.

@@ -1,0 +1,1 @@
+Fig. 2: Example of reconstructed EL images of a module with the semitranspar- ent segmentation mask progressing through mechanical load testing and increasing external pressure (pext) values, from (a) 200 Pa to (f) 5,000 Pa.

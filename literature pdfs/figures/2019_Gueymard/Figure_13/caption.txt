@@ -1,0 +1,1 @@
+Fig. 13. Experimental realization of the AM1.5G standard reference spectrum at SRRL-NREL on 2017-09-18. Top panel: Comparison between AM1.5G and the instantaneous spectroradiometer measurement. Bottom panel: percent differ- ence between the predictions from SMARTS v2.9.8 or v2.9.2 and the observed global spectrum.

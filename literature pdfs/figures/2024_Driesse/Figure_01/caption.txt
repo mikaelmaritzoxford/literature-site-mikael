@@ -1,0 +1,1 @@
+Fig. 1. Illustration of the F11 coefficients (all sites composite 1990) and the quadratic spline used to replace them in the continuous model.

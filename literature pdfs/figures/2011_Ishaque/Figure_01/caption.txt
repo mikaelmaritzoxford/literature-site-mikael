@@ -1,0 +1,1 @@
+Fig. 1. Two diode model of PV cell.

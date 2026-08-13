@@ -1,0 +1,1 @@
+Figure 3: High FF solar cell certified data from [1] and corresponding I-V curve estimation from PVsyst 8.0 1DM, a two-diode model and the intrinsic recombination model (“New Param”).

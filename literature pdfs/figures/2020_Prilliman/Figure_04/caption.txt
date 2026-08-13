@@ -1,0 +1,1 @@
+Fig. 4. Summer (top) and winter (bottom) moving-average model versus steady-state predictions and measured module temperatures for Albuquerque, NM, USA.

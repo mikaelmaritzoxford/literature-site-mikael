@@ -1,0 +1,1 @@
+Fig. 11. The effect of the module efficiency on 𝑘𝑡𝑜𝑙. It can be seen that higher efficient modules have a larger tolerable degradation rate.

@@ -1,0 +1,1 @@
+Fig. 10. Scatter plot of predicted versus experimentally measured module temperature.

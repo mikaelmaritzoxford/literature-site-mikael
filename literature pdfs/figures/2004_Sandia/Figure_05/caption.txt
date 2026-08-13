@@ -1,0 +1,1 @@
+Figure 5. Measured solar spectral irradiance on a clear day in Davis, CA, at different air mass conditions during the day. The normalized spectral response of a typical silicon solar cell is superimposed for comparison.

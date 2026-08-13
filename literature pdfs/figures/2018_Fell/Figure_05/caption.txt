@@ -1,0 +1,1 @@
+Fig. 5. Detailed power loss breakdown at maximum power point of the investigated PERC cell. Within a single multidomain and multiscale simulation, a wide range of loss details is quantiﬁed. Note that the results deviate from the baseline model in that worst-case edge recombination [16] is assumed.

@@ -1,0 +1,1 @@
+Figure 3: The internal resistance is constant but varies externally. Imp = 33 mA/cm².

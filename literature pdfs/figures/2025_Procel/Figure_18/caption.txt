@@ -1,0 +1,1 @@
+Fig. 18. Irradiance, Temperature (G,T) fitting surfaces for computing (a) kJsc (G,T), (b) kVoc (G,T) and (c) kPout (G,T) coefficients of F/F 2J tandem module as simulated in Delft (NL) under realistic operative conditions and in free horizon.

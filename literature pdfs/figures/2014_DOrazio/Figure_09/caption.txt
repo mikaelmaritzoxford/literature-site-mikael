@@ -1,0 +1,1 @@
+Fig. 9. PV module and external temperature difference (Tb  Ta) plotted against the solar irradiance for the Module C, throughout the month of August. Tb is experimentally recorded and calculated by NOCT and SNL models. Standardized reference lines are given, which show both NOCT and ICT conditions.

@@ -1,0 +1,1 @@
+Figure 12. Regression analysis used to determine performance coefficients for array maximum- power voltage. The measured Vmp values were translated to a common temperature, 50°C, prior to the regression analysis. The reference Vmp value at the ASTM Standard Reporting Condition is also shown. Trend line coefficients must be divided by Ns to obtain C2, C3 coefficients.

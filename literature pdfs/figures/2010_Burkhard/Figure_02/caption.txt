@@ -1,0 +1,1 @@
+Figure 2 . Active layer absorption for optimized P3HT:PCBM solar cell calculated using the method we propose with values of n and k as meas- ured by VASE for the active layer as well as values assuming n = 2 at all wavelengths.

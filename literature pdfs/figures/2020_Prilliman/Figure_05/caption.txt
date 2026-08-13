@@ -1,0 +1,1 @@
+Fig. 5. Histogram of moving-average model residuals for, from top: Albu- querque, Orlando, Las Vegas, and Williston.

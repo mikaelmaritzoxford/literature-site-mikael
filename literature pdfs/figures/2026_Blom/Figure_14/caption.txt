@@ -1,0 +1,1 @@
+Fig. 14. The values of 𝑘𝑡𝑜𝑙 when considering all environmental impact categories. The first row indicates the original calculate value for 𝑘𝑡𝑜𝑙 when only considering LEY (𝑘𝑡𝑜𝑙,𝐸𝑌). All results are obtained by using the original PerSi module with an efficiency of 28%.

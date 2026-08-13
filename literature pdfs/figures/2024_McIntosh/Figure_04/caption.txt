@@ -1,0 +1,1 @@
+Fig. 4. Calculated ΔJSC of a horizontal c-Si module for the default AM1.5 inputs and a range of PWV (cm), where the clear-sky spectra are (a) unscaled, and (b) scaled to 1000 W/m2.

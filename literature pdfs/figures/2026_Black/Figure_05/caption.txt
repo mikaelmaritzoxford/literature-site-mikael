@@ -1,0 +1,1 @@
+Fig. 5. (a) Influence of the choice of mobility model on calculated 𝐶𝑎𝑚𝑏 vs temperature. (b) Corresponding ratio of 𝐶𝑎𝑚𝑏 for each model to that determined using the mobility model of Klaassen et al.

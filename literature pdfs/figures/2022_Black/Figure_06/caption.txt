@@ -1,0 +1,1 @@
+Fig. 6. 𝜏𝑒𝑓𝑓vs 𝛥𝑛measured for an SiO2-passivated n-type FZ-Si sample with 𝑛0 = 6.88 × 1016 cm−3. Lines show the corresponding intrinsic lifetime according to the parameterisations of Richter et al. [1], Veith-Wolf et al. [19], and this work. In the latter case we have included the effects of photon recycling.

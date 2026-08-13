@@ -1,0 +1,1 @@
+Fig. 5. Weighted RMSE values at STC as a function of A) cell thickness (the red line depicts the weighted RMSE value for the standard Single Diode Fit) and B) Bulk doping concentration (the red line shows the nominal bulk resistivity of the cell). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)

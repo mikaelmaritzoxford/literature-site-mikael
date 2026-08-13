@@ -1,0 +1,1 @@
+Figure 6. True-time comparison of predicted module temperature (bullets) with measured mean module temperature (open

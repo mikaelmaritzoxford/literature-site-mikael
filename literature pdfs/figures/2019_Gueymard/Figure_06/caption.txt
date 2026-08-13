@@ -1,0 +1,1 @@
+Fig. 6. Spectral distribution of the direct normal irradiance predicted by SMARTS v2.9.8 with the default ET9 AM0 spectrum, illustrating the impact of air mass and aerosol model. The conditions of Fig. 5 (bottom panel) are as- sumed. The corresponding broadband (integrated) DNI values are indicated in each case.

@@ -1,0 +1,1 @@
+Fig. 8. Schematic view of PV system scene as input in stage 2 of our model­ ling framework.

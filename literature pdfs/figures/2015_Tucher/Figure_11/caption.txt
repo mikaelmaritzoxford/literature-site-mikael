@@ -1,0 +1,1 @@
+Fig. 11. Scheme of the power redistribution and the nomenclature for the matrices and the power distribution vector.

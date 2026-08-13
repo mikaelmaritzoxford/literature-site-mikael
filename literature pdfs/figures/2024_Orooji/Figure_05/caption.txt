@@ -1,0 +1,1 @@
+Figure 5. FF of perovskite/Si tandem solar cell as a function of current mismatch for different values of the RSh in the perovskite top solar cell.

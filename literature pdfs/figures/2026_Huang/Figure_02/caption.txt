@@ -1,0 +1,1 @@
+FIG. 2. (a) and (b) Experimental and fitting dark I–V curves of the devices with a-Si:H(pþ) and nc-SiOx:H(pþ) emitters at 400 K under forward bias. The insets in (a) and (b) are the double- and three-diode models for fitting the I–V curves, respectively.

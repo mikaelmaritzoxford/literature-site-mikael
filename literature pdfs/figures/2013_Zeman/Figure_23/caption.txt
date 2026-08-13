@@ -1,0 +1,1 @@
+Fig. 23. Schematic of the 3-D to 1-D compression technique. Note that vertical lines are distributed in a 3-D space like in Fig. 21. Here, for simplicity, a simple 2-D cross section is sketched.

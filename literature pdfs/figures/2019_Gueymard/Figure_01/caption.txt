@@ -1,0 +1,1 @@
+Fig. 1. Simplified flowchart of the SMARTS algorithm.

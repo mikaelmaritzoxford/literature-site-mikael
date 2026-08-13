@@ -1,0 +1,1 @@
+Fig. 18. Total photo-current density (a) and sub-cells photo-current densities (b) in simulated triple junction cells. From left to right results of the subsequent optimization series are reported. Circled dots indicate current-matched triple junction devices above at least one of the two targets.

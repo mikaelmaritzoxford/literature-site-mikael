@@ -1,0 +1,1 @@
+Fig. 5. The residuals of all models (expressed as a percentage of the mean value of GbMeas) as a function of the clearness index kt.

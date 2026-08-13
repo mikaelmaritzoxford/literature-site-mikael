@@ -1,0 +1,1 @@
+Fig. 8: Normalized power as a function of the applied external pressure, i.e., P(pext), for a single PV module (F0000-0040). The highlighted red regions represents locations specified as cracks, i.e., fcrack.

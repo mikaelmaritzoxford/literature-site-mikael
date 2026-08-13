@@ -1,0 +1,1 @@
+Fig. 3. Example of the relationship between modeled GTI and GHI showing how the Perez–Driesse model ensures there is a GHI value for every GTI value. The calculated GTI is based on 𝜌= 0.25, 𝑆= 40◦, surface azimuth=180◦, solar zenith = 75◦, and solar azimuth=82◦.

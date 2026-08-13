@@ -1,0 +1,1 @@
+Figure 6. Typical empirical relationship illustrating the influence of solar spectral variation on module short-circuit current, relative to the AMa=1.5 reference condition. Results were measured at Sandia National Laboratories for a variety of commercial modules.

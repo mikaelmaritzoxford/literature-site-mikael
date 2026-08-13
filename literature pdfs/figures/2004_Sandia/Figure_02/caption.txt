@@ -1,0 +1,1 @@
+Figure 2. Illustration of a module I-V curve showing the five points on the curve that are provided by the Sandia performance model. Irradiance Dependent Parameters

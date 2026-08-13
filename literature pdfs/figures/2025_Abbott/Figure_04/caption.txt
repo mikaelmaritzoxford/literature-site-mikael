@@ -1,0 +1,1 @@
+Fig. 4. fλ for bifacial modules simulated at Beijing plotted against (a) air mass, (b) PWV, (c) AOD and (d) ozone for 2T tandem (orange) and PERC modules (red).

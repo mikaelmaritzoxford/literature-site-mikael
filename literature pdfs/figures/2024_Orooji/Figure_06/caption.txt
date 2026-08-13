@@ -1,0 +1,1 @@
+Figure 6. Impact of 5% decline in CE of the perovskite top solar cell A) and silicon bottom solar cell B) on the solar cell parameters (JSC, FF, and PCE) of the perovskite–silicon tandem solar cell. Different scenarios of current matching are considered. To facilitate the comparison, we compare the normalized solar cell parameters.

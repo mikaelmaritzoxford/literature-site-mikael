@@ -1,0 +1,1 @@
+Fig. 9. DTRMSE of the simulated and measured PV module temperatures as a function of wa for the winter and summer periods for winds blowing towards south, south-east and south-west. The minimum values of DTRMSE are marked with red markers. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)

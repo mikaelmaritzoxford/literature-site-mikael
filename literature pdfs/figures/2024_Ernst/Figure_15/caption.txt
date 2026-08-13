@@ -1,0 +1,1 @@
+Fig. 15. Energy yield as function of RT modelling detail for cell-level irradiance values (red) and module average irradiance values (blue), for bifacial and front illumination. The results for the VF model are shown as dashed lines. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)

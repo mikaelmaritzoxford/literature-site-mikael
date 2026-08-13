@@ -1,0 +1,1 @@
+Fig. 1. Variation of measured effective lifetime 𝜏𝑒𝑓𝑓 vs excess carrier concen- tration 𝛥𝑛 with temperature ranging from 117 K to 463 K. Lines show the fits used to extract the ambipolar Auger coefficient 𝐶𝑎𝑚𝑏.

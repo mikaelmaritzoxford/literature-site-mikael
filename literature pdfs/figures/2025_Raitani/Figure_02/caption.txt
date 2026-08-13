@@ -1,0 +1,1 @@
+Figure 2. Numerical simulation results on the temperature-dependent parameters of the P−Si 2-T tandem solar cell at 300 and 330 K. (a) Variation of Jsc, (b) Voc, (c) fill factor (FF), and (d) efficiency (η) with EgT.

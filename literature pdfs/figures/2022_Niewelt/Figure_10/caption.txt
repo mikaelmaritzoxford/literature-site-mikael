@@ -1,0 +1,1 @@
+Fig. 10. Relative difference between the Auger recombination rate RAuger predictions of the models by Richter et al. [9] and Black and Macdonald [34] to the model presented in this work. For p- and n-type doping Δn = 1010 cm−3

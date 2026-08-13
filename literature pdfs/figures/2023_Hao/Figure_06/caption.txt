@@ -1,0 +1,1 @@
+Figure 6. Ratios between levelized cost of electricity (LCOE)tandem and LCOESHJ as a function of albedo. Cinc represents the different installation cost increments (Cinc: 10% red, 13% yellow, 15% blue).

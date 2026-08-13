@@ -1,0 +1,1 @@
+Fig. 2. Distribution of diﬀuse radiation fraction kd over a year in Tampere, Finland, during daytime calculated with solar radiation data measured with a sampling rate of 1 Hz.

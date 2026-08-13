@@ -1,0 +1,1 @@
+Fig. 3. Module glass transmission curves with and without Incident Angle Modifier (IAM) as function of incidence angle. The incidence angle is measured relatively to the module surface and is 0◦at normal incidence and 90◦for incidence parallel to the surface.

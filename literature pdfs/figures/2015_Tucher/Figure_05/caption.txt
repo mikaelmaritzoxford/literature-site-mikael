@@ -1,0 +1,1 @@
+Fig. 5. Redistribution matrix for a binary crossed grating structure on the rear side with a period of 1 µm at a wavelength of 1100 nm. (a) shows a sketch of light interaction with the silicon-air surface (b) shows a simplified version of the matrix where all entries of different φ- values have been summarized only into the dependency of θ.

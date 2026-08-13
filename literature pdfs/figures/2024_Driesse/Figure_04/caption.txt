@@ -1,0 +1,1 @@
+Fig. 4. Example of the relationship between modeled GTI and GHI at high angle of incidence, where multiple GHI values can produce the same GTI value. The calculated GTI is based on 𝜌= 0.25, 𝑆= 40◦, surface azimuth = 180◦, solar zenith=75◦, and solar azimuth = 76◦.

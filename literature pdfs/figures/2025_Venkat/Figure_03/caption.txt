@@ -1,0 +1,1 @@
+Fig. 3: Visual example of the model under-predicting resistive vs. isolated crack- related defects for the new EL-Defect-Evolution dataset used in this study.

@@ -1,0 +1,1 @@
+Fig. 12. Experimental realization of the AM1.5D standard reference spectrum at SRRL-NREL on 2017-10-04. Top panel: Comparison between the SMARTS v2.9.8 prediction and its counterpart measured with an EKO-WISER spectro- radiometer. Bottom panel: percent difference between the predictions from SMARTS v2.9.8 or v2.9.2 and the observed direct spectrum.

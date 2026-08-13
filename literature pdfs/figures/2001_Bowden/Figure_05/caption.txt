@@ -1,0 +1,1 @@
+Figure 5: The open circles are the measured data points. The three points on the fully illuminated curve are already measured during the normal IV curve measurement. The only extra data needed for Rs measurement are the cell Voc and Isc under shading. The point in reverse bias is only needed for Rshunt.

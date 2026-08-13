@@ -1,0 +1,1 @@
+Fig. 5. Sketch of the half-.illuminated 2-D perimeter domain created both in Sentaurus and Quokka3; in Quokka3 the lateral conduction of the intermediate layers (n-poly emitter and recombination TCO) is not accounted for, but is varied in Sentaurus.

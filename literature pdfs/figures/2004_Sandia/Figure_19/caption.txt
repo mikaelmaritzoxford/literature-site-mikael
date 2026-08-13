@@ -1,0 +1,1 @@
+Figure 19. Thermal infrared (IR) image of several modules in an array illustrating the spatial variation in module temperature often present due to wind cooling, mounting structures, junction boxes, etc.

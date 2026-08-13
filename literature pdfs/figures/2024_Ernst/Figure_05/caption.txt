@@ -1,0 +1,1 @@
+Fig. 5. Schematic representation of the sensor placement in the RT model Step 9. The sensor locations, both front and rear-facing, are positioned to mimic real-world conditions. Their arrangement along the length of the module ensures minimal interference from shading effects caused by the module frame, aligning closely with the physical setup observed in the actual system.

@@ -1,0 +1,1 @@
+Fig. 4. (a) Schematic cross-section of triple junction thin-ﬁlm silicon solar cell. (b) Measured EQE (circles) and simulated absorptance in i-layer (lines) of top, middle, and bottom cells.

@@ -1,0 +1,1 @@
+Fig. 4. Example of a redistribution matrix, in this case the matrix Rb,1 at 1000 nm for the perovskite/SHJ stack.

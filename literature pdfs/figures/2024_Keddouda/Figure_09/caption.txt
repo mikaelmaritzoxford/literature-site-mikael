@@ -1,0 +1,1 @@
+Fig. 9. Comparison of experimental module temperature with the algorithm’s predicted Tpv during March 15 to 19, 2023.

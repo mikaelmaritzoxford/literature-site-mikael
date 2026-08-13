@@ -1,0 +1,1 @@
+Fig. 6. Current vs voltage for the single-crystalline cell type predicted by the ﬁve-parameter model (solid lines), the King model (closed circles) and measured by NIST (open circles) for four operating conditions and the SRC condition (dotted line).

@@ -1,0 +1,1 @@
+Fig. 7. Spectral distribution of the diffuse horizontal irradiance (DIF) predicted by SMARTS v2.9.8 with the default ET9 AM0 spectrum, illustrating the impact of air mass and aerosol model. The conditions of Fig. 5 (bottom panel) are assumed. The corresponding broadband (integrated) DIF values are indicated in each case.

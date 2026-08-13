@@ -1,0 +1,1 @@
+Fig. 4. Two bulk model types in Quokka3 (a) 3-D quasi-neutral DD in the discretized bulk with lumped skin equivalent circuit boundary conditions. (b) EQC modeling with a current source and diode representing total generation and recombination in the bulk and skins, resulting in a distributed diode solar cell model.

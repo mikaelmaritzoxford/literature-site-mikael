@@ -1,0 +1,1 @@
+Figure 5. A comparison of EY for bifacial SHJ modules and bifacial PVK/c-Si tandem modules in a) Chengdu, b) Shanghai, and c) Los Angeles. The power- generation density (PGD) of bifacial tandem modules (Eg_PVK = 1.557 eV) at different albedo conditions in a summer day in d) Chengdu, e) Shanghai, and f) Los Angeles, along with their meteorological characteristics.

@@ -1,0 +1,1 @@
+FIG. 3. Analysis of dark I–V curves of a SHJ device with nc-SiOx:H(pþ) emitter. (a) Measured (dots) and fitted (solid lines) dark I–V curves in the temperature range of 260– 440 K for V > 0 V. (b) The linear relationship between I01 and 1/(kT) in a semi-log plot. (c) I03  1/(kT) relationship in semi-log plot.

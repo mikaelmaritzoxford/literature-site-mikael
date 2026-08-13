@@ -1,0 +1,1 @@
+Fig. 3. Transmittance from various absorbing gases as evaluated by SMARTS v2.9.8 for two air mass values (1 and 5.6) and an observer at sea level, assuming the gas concentrations specified by the U.S. Standard Atmosphere. Top panel: ozone absorption; middle panel: water vapor absorption; bottom panel: ab- sorption from all other gases.

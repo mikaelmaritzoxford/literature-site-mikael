@@ -1,0 +1,1 @@
+Figure 4. Measured (blue curve) and simulated (red curve) a) VMPP, b) JMPP, and c) PMPP values of the PK-Si tandem device over the course of three consecutive cloudy and three consecutive sunny days. d) Measured total incident irradiance (yellow area) and device operating temperature (black curve) for the six selected days.

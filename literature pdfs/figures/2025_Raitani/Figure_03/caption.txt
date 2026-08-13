@@ -1,0 +1,1 @@
+Figure 3. Energy yield and LCOE of P−Si tandem cells for different EgT at Mumbai. (a) Calculated maximum module temperature per day and (b) mean incident power density per month throughout the year (2019). (c) The monthly energy yield estimates for Mumbai. (d) LCOE map as a function of the degradation rate and EgT for 25-year lifespan near Mumbai.

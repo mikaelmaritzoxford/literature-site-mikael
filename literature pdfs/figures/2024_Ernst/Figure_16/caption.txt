@@ -1,0 +1,1 @@
+Fig. 16. Total simulation time (clock time) for modelling energy yield with 256 parallel virtual CPU cores as function of RT simulation error for the nine levels of RT modelling detail. Computation time increases with decreasing simulation error and increasing modelling detail.

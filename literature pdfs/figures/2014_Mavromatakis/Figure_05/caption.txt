@@ -1,0 +1,1 @@
+Fig. 5. The predictions of the selected models are shown as a function of wind speed for a solar irradiance of 800 W/m2 and an ambient temperature of 20 C. The top plot shows the results using the available correlations from the literature (Models 1–7) while the lower plot shows the results when the best ﬁt parameters, as shown in Table 1, are implemented.

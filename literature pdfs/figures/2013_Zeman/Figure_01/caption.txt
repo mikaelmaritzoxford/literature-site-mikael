@@ -1,0 +1,1 @@
+Fig. 1. Spectral absorption in 300 nm thick a-Si:H layer (a) and 1 μm thick nc-Si:H layer (b) matched to the AM1.5 spectrum, when the effective optical thickness of the layers is increased 10 and 50 times.

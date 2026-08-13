@@ -1,0 +1,1 @@
+Figure 1 . a) Parasitic absorption, active layer absorption, and total absorption of a typical P3HT:PCBM cell (220 nm thick active layer) as calculated by the transfer matrix optical model. b) Total absorptions for cells of varying thickness as calculated by the transfer matrix method compared with experimentally measured values.

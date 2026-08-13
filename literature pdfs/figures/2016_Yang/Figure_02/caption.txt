@@ -1,0 +1,1 @@
+Fig. 2. Pairwise Diebold–Mariano (DM) tests for comparing the predictive accuracy of various models. For each pair of models, we count the number of instances the DM test statistics falls in the lower or upper 2.5% tail of a standard normal distribution. The entries denote ‘‘Model A better than Model B” scenarios, i.e., EðdÞ  E g eModel A

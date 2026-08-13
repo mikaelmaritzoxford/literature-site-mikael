@@ -1,0 +1,1 @@
+Fig. 9. Time series plots of the predicted 𝐼𝑠𝑐𝑛values, 𝐼𝑠𝑐𝑛,𝑐𝑎𝑙𝑐, and those calculated from measured data, 𝐼𝑠𝑐𝑛,𝑚𝑒𝑎𝑠.

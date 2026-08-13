@@ -1,0 +1,1 @@
+Figure 15. Comparison of predicted and measured monthly energy production for a 3.36-kW grid-connected photovoltaic system in Albuquerque, NM. Chart shows predicted dc-energy available from the array, as well as the predicted and measured ac-energy provided by the system.

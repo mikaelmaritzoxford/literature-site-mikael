@@ -1,0 +1,1 @@
+Figure 7. Typical empirical relationship illustrating the influence of solar angle-of-incidence in reducing a module’s short-circuit-current. Results were measured at Sandia National Laboratories for four different module manufacturers. The effect is dominated by the reflectance characteristics of the glass surface.

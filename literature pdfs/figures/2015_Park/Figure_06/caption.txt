@@ -1,0 +1,1 @@
+Fig. 6. PSIM implementation to simulate the characteristic curve. (a) equivalent circuit, (b) parameter calculation.

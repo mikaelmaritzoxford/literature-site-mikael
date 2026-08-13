@@ -1,0 +1,1 @@
+Fig. 2. Error in maximum power for each model as a function of cell temperature and irradiance.

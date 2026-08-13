@@ -1,0 +1,1 @@
+Fig. 14. Taylor diagram for performance evaluation of simulation algorithm, proposed and literature models on new dataset.

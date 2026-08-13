@@ -1,0 +1,1 @@
+Fig. 4. (a) The calibration and validation of the analytical model for the different datasets. (b) A validation of the analytical model on the effect of degradation on the IV curve.

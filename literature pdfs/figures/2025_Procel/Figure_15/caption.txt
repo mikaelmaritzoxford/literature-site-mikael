@@ -1,0 +1,1 @@
+Fig. 15. Simulated relative power output variation (ΔPout, %) for different PV module archetypes under standard test conditions (STC). Note that the M2-type module with bifacial SHJ is used as reference (0 %). The comparison includes both single-junction (1J) and tandem (2J) configurations, as well as advanced G12-based modules based on tandem cells with T/T morphology.

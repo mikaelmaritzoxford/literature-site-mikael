@@ -1,0 +1,1 @@
+Fig. 9. a) The top plot shows the annual AC energy yield for each of the PV systems in all four locations. b) The middle shows the specific yield of all sys­ tems. c) The bottom plot shows the irradiance weighted mean of the annual module temperatures indicating that tandem systems operate at a about 1 ◦C lower temperature.

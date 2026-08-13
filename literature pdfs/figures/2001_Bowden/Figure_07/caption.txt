@@ -1,0 +1,1 @@
+Figure 7: Not only does the cell Rs increase as each probe is removed but the variation on Rs also increases, as evidenced by the increasing slope. Rs is calculated from the difference between the SunsVoc and the illuminated IV curve.

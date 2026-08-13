@@ -1,0 +1,1 @@
+Fig. 2. Layer structure of a perovskite/silicon hetero-junction tandem cell. In terms of the matrix framework, the layers deposited on top of the bulk silicon, including the perovskite, make up the front surface and the a-Si/ITO layers make up the back surface. The silver back layer is treated as the semi-inﬁnite transmission medium in the TMM calculations.

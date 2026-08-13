@@ -1,0 +1,1 @@
+Fig. 4: Evaluation metrics of the EL-Defect-Evolution dataset across all defect categories as a function of threshold.

@@ -1,0 +1,1 @@
+Fig. 6. Optimum EY for all investigated architectures of perovskite/c-Si tandem and c-Si SJ PV modules with respect to albedo at (a) Daggett and (b) Portland. The optimal bandgap of perovskite in all perovskite/c-Si tandem PV modules is indicated for all grounds.

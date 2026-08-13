@@ -1,0 +1,1 @@
+Fig. 1. Carrier mobility sum 𝜇𝑝+𝜇𝑛vs excess carrier concentration 𝛥𝑛in intrinsic c-Si, as measured by Dannhäuser [40] (open symbols) and Krausse [41] (filled symbols) at room temperature. Lines show the empirical parameterisation of the same data used in the Sinton measurement software [13], as well as the physically-based model of Klaassen [38,39] at 300 K.

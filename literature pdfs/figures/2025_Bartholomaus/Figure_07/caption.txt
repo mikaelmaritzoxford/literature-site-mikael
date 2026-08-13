@@ -1,0 +1,1 @@
+Fig. 7. Modelling error for Isc. a) nRMSE versus nMBE from modelled IV characteristic. Individual modules are marked with unique symbols and the models have dedicated colors. b) Relative differences (=nMBE) between modelled and measured Isc, Pmp and Voc values separated by modules. Colors represent models.

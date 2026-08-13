@@ -1,0 +1,1 @@
+Fig. 3. IV characteristics modelling ﬂowchart. The irradiance modelling chain is marked in blue, temperature modelling in purple and the electrical modelling chain in red.

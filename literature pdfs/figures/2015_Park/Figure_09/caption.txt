@@ -1,0 +1,1 @@
+Fig. 9. Comparisons of algorithm performance. (a) 10% current error, (b) 10% power error, (c) extraction time.

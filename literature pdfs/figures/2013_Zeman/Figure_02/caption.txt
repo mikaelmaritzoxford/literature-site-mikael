@@ -1,0 +1,1 @@
+Fig. 2. Illustrating the geometry used for the scattering model. Also a beam of light, which is incident from the material with refractive index n1 and scattered at the nano-textured interface, is indicated.

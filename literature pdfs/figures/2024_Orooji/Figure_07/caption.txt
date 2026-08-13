@@ -1,0 +1,1 @@
+Figure 7. Relative degradation in tandem solar cell EY undergoing 10% degradation of the VOC, JSC, and FF implemented by variation in the diode parameters (J0, CE, RS, and RSh) of the perovskite top cell in Phoenix, Seattle, and Honolulu.

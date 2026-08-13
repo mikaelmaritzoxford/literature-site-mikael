@@ -1,0 +1,1 @@
+Figure 5. Comparison of predicted mean module temperature with measured mean module temperature for all 942 daytime data points measured during the ﬁrst week of November 2006. The 599 open circles are true predictions of the theory. The

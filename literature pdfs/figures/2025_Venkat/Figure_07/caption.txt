@@ -1,0 +1,1 @@
+Fig. 7: Lollipop plot to compare durability, stability, and resilience across modules. It is the visual representation of information in Table 3.

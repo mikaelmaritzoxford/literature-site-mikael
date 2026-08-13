@@ -1,0 +1,1 @@
+Figure 6 . a) Electric ﬁ eld intensity for 450 nm monochromatic light vs. position in a real device and as calculated by measuring absorption in a ﬁ lm and doubling the optical density. b) Absorption spectrum of the active layer in a real device and as calculated by measuring absorption in a ﬁ lm and doubling the optical density.

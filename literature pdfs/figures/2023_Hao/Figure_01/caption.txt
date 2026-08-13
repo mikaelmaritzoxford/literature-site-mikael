@@ -1,0 +1,1 @@
+Figure 1. The schematic diagrams of a) the bifacial silicon heterojunction (SHJ) module, bifacial and monofacial perovskite (PVK)/c-Si tandem modules, b) the direct (Idir), diffuse (Idiff), and albedo (Ialbedo) irradiance sunlight irradiating on the bifacial PVK/c-Si tandem module.

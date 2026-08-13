@@ -1,0 +1,1 @@
+Fig. 4. I-V data from Quokka simulations and fits to the data using the four models described in Section X. A) Under STC conditions (1000 W/m2, 25 ◦C), B) At 1000 W/m2, 50 ◦C, C) at 200 W/m2, 25 ◦C.

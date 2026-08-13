@@ -1,0 +1,1 @@
+Fig. 8. Comparison of relative rear irradiance distribution among individual solar cells within a nearly horizontal module (tracker angle: −4◦). The figure presents results from VF simulations on the far left, followed by RT simulations at Step 1, 7, and 9, progressing from left to right, showcasing the influence of model complexity on irradiance distribution.

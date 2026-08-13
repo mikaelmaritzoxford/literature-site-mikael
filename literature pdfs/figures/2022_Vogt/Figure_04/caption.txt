@@ -1,0 +1,1 @@
+Fig. 4. Irradiance map showing the irradiance distribution across the sky for one-time instance.

@@ -1,0 +1,1 @@
+Fig. 1. Example output from SunSolve-Yield for the repeated bay of a single-axis tracker; redder/bluer cells generate more/less current.

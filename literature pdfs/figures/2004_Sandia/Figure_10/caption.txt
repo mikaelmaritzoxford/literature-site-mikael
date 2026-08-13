@@ -1,0 +1,1 @@
+Figure 10. Array current measurements recorded on a clear day for a 3.4-kWp array of c-Si modules in Albuquerque, New Mexico. The measured values were translated to a common temperature, 50°C, before the regression analyses used to determine performance coefficients.

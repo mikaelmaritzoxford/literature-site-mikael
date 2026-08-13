@@ -1,0 +1,1 @@
+Fig. 6: Variation of durability, stability, and resilience of modules based on changes in pairwise variables. Each panel in the facet plot corresponds to individual module. The best functional form is fit to the data using the netSEM package and indicated at the bottom-right corner. The R2

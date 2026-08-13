@@ -1,0 +1,1 @@
+Fig. 7. Simulated and measured absorptance of a silicon wafer with a pyramidal front side texture (inverted (inv), upright (up), random (rand) or regular (reg) pyramids) and a planar rear side.

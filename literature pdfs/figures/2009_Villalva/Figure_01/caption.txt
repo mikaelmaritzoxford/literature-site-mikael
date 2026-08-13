@@ -1,0 +1,1 @@
+Fig. 1. Single-diode model of the theoretical photovoltaic cell and equivalent circuit of a practical photovoltaic device

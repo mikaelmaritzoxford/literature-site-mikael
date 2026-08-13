@@ -1,0 +1,1 @@
+Fig. 8. An example for identifying the tolerable degradation rate 𝑘𝑡𝑜𝑙,𝐼𝑠𝑐 for the modules in Delft. (a) shows the annual EY of the c-Si and PerSi modules for different values of 𝑘𝑝𝑒𝑟,𝐼𝑠𝑐. (b) shows the integrated LEY, such that 𝑘𝑡𝑜𝑙,𝐼𝑠𝑐 can be determined for the case of Delft.

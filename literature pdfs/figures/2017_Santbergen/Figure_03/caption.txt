@@ -1,0 +1,1 @@
+Fig. 3. Scattering matrices calculated by GENPRO4 for (a) a ﬂat air/glass interface. (b) An interface with Asahi U-type texture (calculated for λ = 600 nm). (c) An air/glass interface with an inverted pyramid texture with a steepness of 55°.

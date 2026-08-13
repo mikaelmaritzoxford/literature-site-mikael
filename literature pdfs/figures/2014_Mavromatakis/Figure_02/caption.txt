@@ -1,0 +1,1 @@
+Fig. 2. Linear regression of the measured open circuit voltage versus DT for a Shell SM 55 photovoltaic module under natural daylight. The intercept is determined as 21.308 ± 0.003 V.

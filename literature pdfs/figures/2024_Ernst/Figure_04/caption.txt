@@ -1,0 +1,1 @@
+Fig. 4. A satellite image illustrating the layout of the NREL single-axis tracking system. This system comprises ten tracker rows of 20 solar modules each. The sensor array, consisting of five Si solar cell pyranometers, is positioned in the third row from West, nestled between the fourth and fifth solar modules from the North.

@@ -1,0 +1,1 @@
+Fig. 1. Word cloud of studies that compare several transposition models. The size of a word is proportional to the number of models considered in the study, ranging from 2 to 20 models.

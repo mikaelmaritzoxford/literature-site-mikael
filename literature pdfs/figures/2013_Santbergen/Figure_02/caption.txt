@@ -1,0 +1,1 @@
+Fig. 2. Simulated (area) and measured (symbols) R, A and T of a 1 μm ZnO:Al film on glass. The inset shows T in more detail. (a) single coherent simulation (b) average of three coherent simulations (the inset shows the individual simulations with ϕ = 0°, 120° and 240° and their average).

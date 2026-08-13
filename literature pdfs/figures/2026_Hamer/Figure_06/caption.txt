@@ -1,0 +1,1 @@
+Fig. 6. PMAX Error and n_RMSE values for single-diode (SD) and intrinsic adjusted (Adj) fits to measured cell I-V data.

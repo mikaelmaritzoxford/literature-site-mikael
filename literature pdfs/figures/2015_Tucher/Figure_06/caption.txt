@@ -1,0 +1,1 @@
+Fig. 6. Absorptance of a silicon wafer with a planar front side and a binary crossed grating rear side. Since the measurement was carried out with an incoming angle of 8°, we used this angle for the simulation as well.

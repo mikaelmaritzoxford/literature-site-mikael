@@ -1,0 +1,1 @@
+Fig. 2. Results of the azimuth angle convergence analysis. The total absorptance of a system with planar front and diffractive grating at the rear side was calculated for different numbers of azimuth angle channels and compared with an exact discretization.

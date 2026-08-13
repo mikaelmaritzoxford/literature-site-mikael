@@ -1,0 +1,1 @@
+Fig. 7. A) Conversion efficiency and temperature coefficient of power as a function of diode saturation current and B) Relative change in efficiency as a function of irradiance for diode saturation currents of 1.5 × 10- 14, 2.5 × 10−13 and 4 × 10−12 A/cm2.

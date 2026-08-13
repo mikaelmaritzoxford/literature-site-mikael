@@ -1,0 +1,1 @@
+Fig. 1. Generation of fitted I-V curve (25 ◦C, 1000 W/m2). A) adjustment of the voltage datapoints to account for RS.ext. B) Adjustment of the current datapoints to account for intrinsic recombination. C) Single-diode fit to adjusted data. D) Final fit to original data.

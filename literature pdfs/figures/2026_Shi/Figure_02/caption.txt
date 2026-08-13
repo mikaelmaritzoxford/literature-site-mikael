@@ -1,0 +1,1 @@
+Fig. 2. Adsorption of MeO-4PACz on RPD-SnOx. (A) DFT calculation of MeO-4PACz adsorbed on SnOx and ITO, and charge transfer between MeO-4PACz and SnOx (ITO). (B) COHP curves of Sn–O and In–O bonds. (C) UPS spectra of ITO and SnOx with and without MeO-4PACz anchoring. (D and E) Simulated band diagrams of the tandems with (D) ITO and (E) RPD-SnOx recombination layers.

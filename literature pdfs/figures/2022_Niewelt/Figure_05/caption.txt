@@ -1,0 +1,1 @@
+Fig. 5. Process flows of the different sample sets. Grey fields indicate the processes to define sample thickness, red fields indicate thermal pre-treatments to dissolve grown-in defects [10,28,29,55], blue fields indicate processes to passivate the sample surfaces, as discussed in Refs. [14,27].

@@ -1,0 +1,1 @@
+Fig. 2. External quantum efficiency for (red) the top cell and (green) bottom cell of the 2T tandem cell. Data shown as open symbols are measurements reported in [16], while lines represent simulations performed using SunSolve with the optical model applied in this work.

@@ -1,0 +1,1 @@
+Fig.4. Examplesofshortcomings.(a)Failedﬁndingfaintcontactinterruptions in a multicrystalline cell. (b) Overwrite blue contact annotation with red crack annotation. (c) Visually obvious crack being missed. (d) Interconnect annotation going through bright spot.

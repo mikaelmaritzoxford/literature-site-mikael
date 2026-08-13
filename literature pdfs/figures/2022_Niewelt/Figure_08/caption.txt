@@ -1,0 +1,1 @@
+Fig. 8. Collection of highest measured effective lifetimes on p- and n-type doped samples [9,10,14,22,42,43]. The measured τeff were determined at different in­ jection conditions. The lines were calculated with the Richter model and hence illustrate the necessity for an updated parameterisation of intrinsic recombination.

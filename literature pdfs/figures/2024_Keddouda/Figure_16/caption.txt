@@ -1,0 +1,1 @@
+Fig. 16. Temperature contours of Tback for different α values at Ws = 1 m/s, Ta = 30

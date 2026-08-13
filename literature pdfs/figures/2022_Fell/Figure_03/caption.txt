@@ -1,0 +1,1 @@
+Fig. 3. Exemplary spectrally resolved reﬂection and absorption data of a perovskite top cell derived from detailed optical simulations, suitable as inputs for Quokka3’s “Text-Z” model.

@@ -1,0 +1,1 @@
+Figure 1: (a) Equivalent circuit diagram of the one diode model. (b) Breakdown of current losses for typical model parameters on logarithmic scale and local ideality factor derived from the slope of the top black curve.

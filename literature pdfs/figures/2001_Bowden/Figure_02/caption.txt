@@ -1,0 +1,1 @@
+Figure 2: Cell with a medium Rs affecting half the cell (Rs = 3 Ω, C = 0.5). The rounding at the maximum point appears very similar to a cell with a high J02 yet it is caused solely by Rs.

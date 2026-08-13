@@ -1,0 +1,1 @@
+Fig. 7. Relative error for Pmp of Rs, Rp and the proposed two-diode model for S36 (multi-crystalline), SP70 (mono-crystalline) and ST40 (thin ﬁlm) (a) for irradiance variation and (b) temperature variation.

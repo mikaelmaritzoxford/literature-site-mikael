@@ -1,0 +1,1 @@
+Figure 3. Over 3300 measurements recorded on five different days with both clear sky and cloudy/overcast operating conditions for 165-Wp mc-Si module. Measured values for Voc and Vmp were translated to a common temperature, 50°C. Regression analyses provided coefficients used in the performance model used to predicted curves at different operating conditions.

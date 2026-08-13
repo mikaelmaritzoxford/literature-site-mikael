@@ -1,0 +1,1 @@
+Figure 4: Reproduction of measured IEC 61853-1 data from the EA fit for a conventional FF (78.4%, PERC) based only on limited input (𝑃𝑚𝑝𝑝, 𝑉𝑚𝑝𝑝, 𝑉𝑜𝑐, 𝐼𝑠𝑐, 𝜇𝐼𝑠𝑐, 𝜇𝑉𝑜𝑐, 𝜇𝑃𝑚𝑝𝑝) and conventional assumption on low light efficiency (-4.5% +/- 2%) [9].

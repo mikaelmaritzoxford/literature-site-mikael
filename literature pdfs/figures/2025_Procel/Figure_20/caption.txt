@@ -1,0 +1,1 @@
+Fig. 20. Tandem devices temperature coefficients, from cell & module to system level for the location of Delft under free-horizon and urban-like horizon scenarios. Note the negative sign on the y-axis title.

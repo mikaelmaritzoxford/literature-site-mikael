@@ -1,0 +1,1 @@
+Fig. 7. (a) Ratio of 𝑉𝑜𝑐, 𝐹𝐹, and 𝑃𝑜𝑢𝑡 at the theoretical efficiency limit when using the Auger model of this work, compared to that calculated using the temperature-independent model of Niewelt et al. and (b) corresponding difference in absolute conversion efficiency 𝜂, as a function of temperature.

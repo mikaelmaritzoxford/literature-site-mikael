@@ -1,0 +1,1 @@
+Fig. 8. Comparison of the absorption in the bulk Si layer for three different cases: a perfect back mirror with 100% reﬂectivity at all wavelengths, the textured back surface as considered in Figures 5 and 6, and the same textured back surface with the thickness of the bulk Si increased by 100 μm to 360μm

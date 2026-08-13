@@ -1,0 +1,1 @@
+Figure 1. Relationship between solar diode parameters and solar cell parameters, including the widely recognized degradation mechanisms. Thick gray arrows indicate signiﬁcant impact, while the thin gray arrows highlight less prominent effects.

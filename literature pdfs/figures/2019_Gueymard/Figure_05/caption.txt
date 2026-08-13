@@ -1,0 +1,1 @@
+Fig. 5. Transmittance for molecular (Rayleigh) scattering (top panel) and for aerosol extinction (bottom panel), for a sea-level observer and two air mass values (1 and 5.6). For the aerosol transmittance, both a low-AOD rural aerosol model and a high-AOD dust aerosol model are considered.

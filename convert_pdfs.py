@@ -35,7 +35,7 @@ import anydoc
 from pypdf import PdfReader
 
 # Directory containing the PDF files
-PDF_DIR = Path(__file__).parent / "literature" / "read or scanned"
+PDF_DIR = Path(__file__).parent / "literature pdfs"
 MARKDOWN_DIR = PDF_DIR / "markdown"
 
 OCR_DIR = PDF_DIR / "ocr"

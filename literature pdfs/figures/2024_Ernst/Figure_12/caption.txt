@@ -1,0 +1,1 @@
+Fig. 12. Relative module irradiance across various model complexities, illus­ trating the impact of model intricacy on total irradiance outcomes. Higher values indicate increased total irradiance compared to the reference model at Step 9.

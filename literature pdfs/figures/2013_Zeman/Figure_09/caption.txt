@@ -1,0 +1,1 @@
+Fig. 9. Schematic structures (unit cells) of thin-ﬁlm silicon solar cells on ﬂat glass (a), on 1-D gratings (b), and on 2-D gratings (c). The geometrical dimensions dx, dy, and dz (layers thicknesses) deﬁne the size of the design (dimensions are not in scale).

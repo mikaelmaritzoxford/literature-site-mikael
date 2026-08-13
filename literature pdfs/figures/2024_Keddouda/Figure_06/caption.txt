@@ -1,0 +1,1 @@
+Fig. 6. Weather data recorded during March 15 to 19, 2023: (a) ambient temperature, (b) wind speed, (c) solar radiation and (d) module temperature.

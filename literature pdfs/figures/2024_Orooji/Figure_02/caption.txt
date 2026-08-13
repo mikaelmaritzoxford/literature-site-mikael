@@ -1,0 +1,1 @@
+Figure 2. The methodology used for this study, including 1) type of degradation, 2) modeling time-resolved EY for every hour of the 30 year lifetime, and 3) analyzing the effect of degradation on tandem solar cell EY by computing aggregated EY over 30 years in different climatic conditions.

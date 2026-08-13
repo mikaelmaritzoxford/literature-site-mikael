@@ -1,0 +1,1 @@
+Fig. 7. Frequency histogram of the change in sky diffuse irradiance between time steps.

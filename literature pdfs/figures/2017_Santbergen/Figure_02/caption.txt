@@ -1,0 +1,1 @@
+Fig. 2. (a) Division of every hemispherical direction into angular intervals. (b) Net-radiation subﬂuxes at interface 1. (For clarity the ﬁgure shows six intervals. GENPRO4 typically uses 30 intervals for higher accuracy.)

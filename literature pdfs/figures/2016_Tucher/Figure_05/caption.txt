@@ -1,0 +1,1 @@
+Fig. 5. Absorptance and reflectance of an encapsulated thick silicon sheet with random pyramids as front side texture and a perfect planar reflector at the rear side. The simulations results of the OPTOS module formalism and PV-Lighthouse ray tracing agree very well over the whole spectral range.

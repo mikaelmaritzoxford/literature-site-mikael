@@ -1,0 +1,1 @@
+Fig. 8. 9 by 9 interpolated heat distribution color map at different irradiance

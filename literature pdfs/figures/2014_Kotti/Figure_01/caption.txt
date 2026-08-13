@@ -1,0 +1,1 @@
+Fig. 1. Calculated values of direct normal irradiance, for all sky conditions, using uncorrected diffuse irradiance measurements (a), Drummond (b), LeBaron (c), Batlles (e) and MuneereZhang (d) shadowband correction models versus measurements.

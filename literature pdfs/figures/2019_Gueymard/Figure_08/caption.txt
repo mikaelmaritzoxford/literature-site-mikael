@@ -1,0 +1,1 @@
+Fig. 8. SMARTS predictions vs. RSS spectral measurements of global, diffuse, and direct transmittance at the ARM-SGP site in Oklahoma during (top) 2003- 05-20 at 1400 LST; and (bottom) 2003-05-27 at 1600 LST.

@@ -1,0 +1,1 @@
+Figure 2: (a) Equivalent circuit diagram of the recombination model. (b) Current losses breakdown for typical model parameters and local ideality factor derived from the slope of the top black curve.

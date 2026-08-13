@@ -1,0 +1,1 @@
+Fig. 7. The degradation rates of the different degradation mechanisms in all locations. Also, the normalized power is plotted such that 𝑇80 can be determined.

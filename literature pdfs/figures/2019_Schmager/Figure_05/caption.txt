@@ -1,0 +1,1 @@
+Fig. 5. Electrical interconnection of the multi-junction solar module: (a) In the 2T conﬁguration the two sub-cells are connected in series; (b) in the 3T conﬁguration the the current excess in one of the sub-cells can be extracted; (c) in the 4T conﬁguration both sub-cells are operated at their maximum power point.

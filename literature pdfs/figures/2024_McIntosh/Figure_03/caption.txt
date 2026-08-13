@@ -1,0 +1,1 @@
+Fig. 3. The clear-sky global spectral intensity on a horizontal plane calculated for the default AM1.5 inputs and a range of PWV in cm.

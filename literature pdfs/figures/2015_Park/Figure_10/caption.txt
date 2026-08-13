@@ -1,0 +1,1 @@
+Fig. 10. Optimization process of the proposed method in KC200GT. (a) Parameter convergence, (b) objective function evaluation.

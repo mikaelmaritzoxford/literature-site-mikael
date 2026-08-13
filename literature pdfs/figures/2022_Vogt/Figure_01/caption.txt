@@ -1,0 +1,1 @@
+Fig. 1. Flowchart of PVMD Toolbox describing the simulation methodology. The input data is indicated in black. The main models and (intermediated) results are in blue and green, respectively. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)

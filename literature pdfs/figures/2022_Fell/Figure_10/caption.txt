@@ -1,0 +1,1 @@
+Fig. 10. Perimeter loss of 1 cm x 1 cm laboratory tandem cells with connected and isolated subcells in the perimeter region, and with and without worst-case edge recombination [23] (on the silicon bottom cell edge only).

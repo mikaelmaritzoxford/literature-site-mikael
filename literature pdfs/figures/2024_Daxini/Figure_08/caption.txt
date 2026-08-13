@@ -1,0 +1,1 @@
+Fig. 8. Absolute error (a) and root-mean-squared error values (b) for the spectral mismatch prediction of six different PV panels using three different models. Images reproduced with permission from [23].

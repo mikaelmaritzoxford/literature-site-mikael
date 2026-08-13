@@ -1,0 +1,1 @@
+Fig. 11. (a) Measured and simulated module temperatures for the spring period using the optimal parameter values of Table 2. (b) Absolute diﬀerences between the predicted and measured module temperatures.

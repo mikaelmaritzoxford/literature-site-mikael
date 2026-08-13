@@ -1,0 +1,1 @@
+Figure 1. Test stand of PV modules as viewed from the south. The small PV module (upper left, next to the pyr- anometer) provides a trickle charge for the data logger located behind the array. The data logger records seven pairs of module temperatures and POA irradiance as 5-min

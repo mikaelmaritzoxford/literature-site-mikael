@@ -1,0 +1,1 @@
+Figure 9. Tandem solar cell EY undergoing degradation with absolute annual degradation of A) 0.5% and B) 2% in perovskite top cell in Phoenix. C) Comparison between the effect of 0.5% and 2% absolute annual degradation in perovskite top cell on tandem solar cell PCE and EY (Phoenix).

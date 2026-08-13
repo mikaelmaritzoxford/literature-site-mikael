@@ -1,0 +1,1 @@
+Fig. 4. Theoretical limit of solar cell efficiency ηmax according to simulation with Quokka3. Solid lines were calculated with the Auger model presented in this work in comparison to the Richter model [9] depicted in dashed lines.

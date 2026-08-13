@@ -1,0 +1,1 @@
+Figure 4: Cell with a high Rs affecting a small portion of the cell (Rs = 150 Ω, C = 0.1). The resulting IV curve looks just like a cell with a low Rshunt but again the effect is due solely to Rs. Jmp = 30 mA/cm²

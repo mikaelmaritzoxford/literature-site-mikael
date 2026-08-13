@@ -1,0 +1,1 @@
+Fig. 4. (a) Absorptance and (b) absorption depth profile for of the absorber layer of an a-Si:H solar cell for various degrees of absorber layer coherence, indicated by visibility V. The lines represent V = 0.0, 0.2, 0.4, 0.6, 0.8 and 1.0.

@@ -1,0 +1,1 @@
+Fig. 4. Relative error for Voc and Pmp, for Rs, Rp and the proposed two- diode model for KC200GT PV module.

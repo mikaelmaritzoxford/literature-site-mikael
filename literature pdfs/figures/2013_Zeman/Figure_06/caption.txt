@@ -1,0 +1,1 @@
+Fig. 6. Simulated haze and AID in transmission when (a–c) the lateral feature size ℓis varied at constant rms roughness, (d–f) the rms roughness is varied at constant lateral feature size, and (g–i) a texture with ℓ¼312 nm and rms roughness of 40 nm is superposed with a texture with ℓ¼1250 nm such that the total rms roughness is 80, 120 or 160 nm, respectively.

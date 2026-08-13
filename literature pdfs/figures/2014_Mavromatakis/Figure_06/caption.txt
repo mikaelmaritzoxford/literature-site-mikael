@@ -1,0 +1,1 @@
+Fig. 6. The distribution of DT is shown for the best ﬁt relation (4) and for the worst two relations (5 & 6) according to Table 2. The rest of the Models perform better than Model 5 and worse than Model 6. Data from the module at a tilt angle of 30  are used.

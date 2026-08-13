@@ -1,0 +1,1 @@
+Fig. 7. fλ at various sites. Green symbols plot annual fλ, error bars plot the range of hourly fλ (95% CI), and red symbols plot annual fλ after applying a cloud correction devised from FARMS-NIT.

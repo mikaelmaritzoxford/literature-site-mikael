@@ -1,0 +1,1 @@
+Fig. 5. Summary of low-injection lifetime vs majority carrier concentration reported in the literature for (a) n-type, and (b) p-type Si at ∼300 K. The data of Dziewior and Schmid [52] and Ciszek et al. [59] were reassessed as described in the text. (c) and (d) show the same data replotted as 𝜏−1

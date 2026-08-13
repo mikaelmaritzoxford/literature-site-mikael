@@ -1,0 +1,1 @@
+Fig. 9. Current vs voltage for the triple junction cell type predicted by the ﬁve-parameter model (solid lines), the King model (closed circles) and measured by NIST (open circles) for four operating conditions. (Note: results are for 2 panels in series.)

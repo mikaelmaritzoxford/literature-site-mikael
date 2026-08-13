@@ -1,0 +1,1 @@
+Fig. 4. Spectral responses of several common PV technologies, namely amorphous silicon (aSi), Cadmium Telluride (CdTe), crystalline silicon (cSi), and Copper Indium Gallium Selenide (CIGS). The spectral responses are plotted using data published by Amillo et al. [51]. The AM1.5 reference spectrum, normalised between 300 nm and 1200 nm, is plotted in the background for comparison.

@@ -1,0 +1,1 @@
+Fig. 4. Deviation of datasheet speciﬁcations versus ﬂash test measurements of the eight modules included in this study. Shown are 5 relevant points on the IV curve and the bifaciality factor. Flash tests were done with an Endeas Quicksun at STC before module deployment.

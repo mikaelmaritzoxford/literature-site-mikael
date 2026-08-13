@@ -1,0 +1,1 @@
+Fig. 12. Comparison of simulation algorithm of present work with experimental data and other temperature models.

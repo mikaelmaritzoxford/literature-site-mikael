@@ -1,0 +1,1 @@
+Fig. 2. Example of measured module temperatures, GPOA and RPOA irradiance acquired by the system in Figure 1, for a clear sky day (July 8th, 2023).

@@ -1,0 +1,1 @@
+Fig. 7. Simulated EQE of Perlin textures with different lateral feature sizes and a constant sr¼40 nm.

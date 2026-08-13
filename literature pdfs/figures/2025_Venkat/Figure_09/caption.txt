@@ -1,0 +1,1 @@
+Fig. 9: Examples of the segmented EL images of modules in their final state with progressively increasing stability going from left to right. The highlighted red regions indicating cracks, i.e., fcrack, clearly increase moving from the F0000-0040 module on the far left and incrementally going to the right.

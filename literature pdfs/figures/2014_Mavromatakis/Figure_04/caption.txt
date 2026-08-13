@@ -1,0 +1,1 @@
+Fig. 4. The distribution of DT is shown along with the best Gaussian ﬁt (dash-dotted line). Data from the module at a tilt angle of 30 are used. The center of the Gaussian is located at 0.7 C, while the HWHM is 2.2 C.

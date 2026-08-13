@@ -1,0 +1,1 @@
+Fig. 1. Equivalent electrical circuit of a solar cell; (a) SDM, (b) ISDM, (c) DDM, (d) MMDM, (e) TDM.

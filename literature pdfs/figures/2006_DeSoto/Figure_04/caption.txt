@@ -1,0 +1,1 @@
+Fig. 4. Incidence angle modiﬁer, Ksa, as a function of incidence angle, h, calculated using Eqs. (14)–(16) (solid line). The dotted lines are the incidence angle modiﬁers calculated using Eq. (13) with the coeﬃcients for each cell type provided in Table A.1.

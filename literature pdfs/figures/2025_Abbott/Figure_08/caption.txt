@@ -1,0 +1,1 @@
+Fig. 8. PDC when assuming the incident spectra is (a) AM1.5g and (b) fitted First Solar equation vs PDC when applying synthetic spectra. Simulations for 2TT module on an SAT at Beijing.

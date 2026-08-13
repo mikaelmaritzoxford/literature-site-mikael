@@ -1,0 +1,1 @@
+Fig. 24. Sequence of actions binding HFSS and ASA program. 3-D spectral absorp- tion rate from HFSS is compressed to 1-D averaged spectral absorption rate. Using Eq. (8), which runs inside ASA, the optical generation rate is obtained and used in the continuity equation.

@@ -1,0 +1,1 @@
+Fig. 5. Air mass modiﬁer, M/Mref, as a function of zenith angle, hz, calculated using Eq. (17) with the coeﬃcients for each cell type listed in Table A.1.

@@ -1,0 +1,1 @@
+Fig. 2. Illustration of geometric parameters of two adjacent modules. The nomenclature and design of this illustration were inspired by SunSolve [35].

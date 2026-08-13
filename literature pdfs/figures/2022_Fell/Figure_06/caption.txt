@@ -1,0 +1,1 @@
+Fig. 6. Edge-length speciﬁc current density loss into the perimeter at open- circuit (Voc) and maximum power point (VMPP) voltage for various cases of intermediate sheet resistance values; comparing simulation results from Sentaurus and Quokka3 with the DD and EQC bulk model type; Quokka3 results are only comparable at very high intermediate sheet resistances.

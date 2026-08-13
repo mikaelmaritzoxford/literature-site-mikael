@@ -1,0 +1,1 @@
+Fig. 13. Comparison between simulated spectral absorptances of the ﬂat solar cell and the solar cells based on the optimal 1-D and 2-D gratings; indicated P and h are given in nm.

@@ -1,0 +1,1 @@
+Fig. 3. Periodic simulation domain for ray tracing (a). Geometrical features of the module, its mounting conditions and the surroundings are considered as well as their optical properties. Resulting sensitivity map can be calculated for each cell (b).

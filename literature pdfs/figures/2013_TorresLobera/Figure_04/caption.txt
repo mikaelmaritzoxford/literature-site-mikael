@@ -1,0 +1,1 @@
+Fig. 4. (a) Measured module temperatures during the three day winter period and the simulated temperatures using the optimal parameter values in Table 2. (b) Corresponding values for the summer period.

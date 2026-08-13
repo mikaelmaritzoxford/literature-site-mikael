@@ -1,0 +1,1 @@
+Fig. 5. The GCR giving a 5% inter-row spacing energy yield loss for all 31 locations as a function of latitude and diffuse fraction for (A) bifacial fixed-tilt systems, (B) bifacial HSAT systems, and (C) bifacial vertical systems. Inset maps show the GCR linearly interpolated across Mexico, the United States, and Canada.

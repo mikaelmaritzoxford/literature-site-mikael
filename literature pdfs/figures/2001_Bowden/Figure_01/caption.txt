@@ -1,0 +1,1 @@
+Figure 1: solar cell in which only part of the cell is affected by Rs. In the dark the JL elements are removed and the current direction is reversed so it flows into the cell.

@@ -1,0 +1,1 @@
+Fig. 2. Top cell skin boundary condition indicating a possible enhancement in orange to account for lateral conductance in the intermediate layers by adding two numerical mesh layers; the lower sheet resistance can also include the respective carrier type’s bulk transport in the bottom cell within a distributed diode model.

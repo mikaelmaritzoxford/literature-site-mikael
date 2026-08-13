@@ -1,0 +1,1 @@
+Figure 2. LSE in outdoor data for FAPbI3-based SJ perovskite solar cells. The maximum power point voltage (color-coded for the hour of the day) during several days of observation as a function of a) time and b) irradiance. The irradiance during the corresponding days is shown in yellow.

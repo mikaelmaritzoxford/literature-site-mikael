@@ -1,0 +1,1 @@
+Fig. 23. PV array model circuit with a controlled current source and a com- putational block that solves the I–V equation.

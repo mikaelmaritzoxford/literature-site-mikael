@@ -1,0 +1,1 @@
+Fig. 4. Light trapping quantiﬁed by Z comparing SunSolve results with the analytical model used in Quokka3.

@@ -1,0 +1,1 @@
+Figure 7. Simulated two-day (August 26, 2019 and February 15, 2020) energy yield of one module for different solar cell technologies as function of the perovskite bandgap (in case of tandems). The geometrical param- eters of the solar panel array as well as the albedo (60%) are identical to the parameters of the Jerusalem rooftop installation as speciﬁed in Table 1.

@@ -1,0 +1,1 @@
+Fig. 3: Scheme of the ﬁelds’ projections of s- and p-wave. ˆn is the normal vector. ˆn is the vector normal to the surface given by interface l,⃗q = ˆuq is the wavevector, ˆu is a unitary vector in the direction of propagation and θ is the angle of incidence (12).

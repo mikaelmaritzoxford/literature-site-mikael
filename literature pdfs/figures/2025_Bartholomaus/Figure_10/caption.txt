@@ -1,0 +1,1 @@
+Fig. 10. Inﬂuence of effective irradiance (a) and cell temperature (b) on the nMBE of Voc for each of the models.
